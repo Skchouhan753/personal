@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Masai Navbar</title>
+    <style>
+    #mainDiv{
+        
+        width:100%;
+        height:100px;
+        margin-top:30px;
+        display:flex;
+        justify-content:space-around;
+
+    }
+    #mainDiv > div:first-child{
+        
+        width:10%;
+        height:100%;
+        
+    }
+    #mainDiv > div:last-child{
+       
+        width:70%;
+        height:100%;
+        display:flex;
+        justify-content:space-around;
+    }
+    #mainDiv > div{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:15px;
+    }
+    p+div{
+        display:flex;
+        background-color: #f2fdff;
+        justify-content:center;
+        align-items:center;
+        padding:0px 20px;
+        border-radius:5px;
+    }
+    p+div>img{
+        width:20px;
+        height:20px;
+        margin-left:10px;
+    }
+    select{
+        border:0px;
+    }
+    button{
+        border:1px solid red;
+        width:80px;
+        height:40px;
+        color:red;
+        border-radius:5px;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+        
+        
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" />
+        </div>
+        
+        
+        
+        <div>
+            <select>
+                <option value="">Cources</option>
+                <option value="">Android</option>
+                <option value="">Apple</option>
+                <option value="">Windows</option>
+            </select>
+            <p>FEES & ISA</p>
+            <p>ABOUT US</p>
+            <p>HIRE FROM US</p>
+            <p>FAQ</p>
+            <p>EVENTS</p>
+            <div>
+                <p>REFFER & EARN</p>
+                <img src="https://www.masaischool.com/img/referral/hand.png" />
+            </div>
+            <button>LOGIN</button>
+        </div>
+    
+    
+    </div>
+
+
+
+
+    
+</body>
+</html>
