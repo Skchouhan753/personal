@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Price Chart</title>
+    <style>
+        #parent_div{
+           
+            width:100%;
+            height:150px;
+            margin:auto;
+            text-align:center;
+            
+        }
+        #parent_div > div+div{
+           
+            width:470px;
+            height:60px;
+            text-align:center; 
+            margin:auto;
+
+        }
+        #inner_div{
+             
+            width:75%;
+            
+            margin:auto;
+            margin-top:10px; 
+            display:flex;         
+        }
+        #inner_div > div{
+            
+            width:300px;
+            height:400px;
+            margin:auto;
+            margin-top:30px; 
+            border-radius:15px; 
+            text-align:center;  
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+        }
+        #inner_div >div >  p{
+            color:green;
+            font-style:italic;
+        
+        }
+        #inner_div > div >button{
+            background-color:white;
+            border: 1px solid blue;
+            border-radius:10px;
+            color:blue;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top:80px;
+        
+        }
+        /* .content{
+            text-align:center;
+           
+        } */
+        .content > div p{
+            font-size:20px;
+            line-height:30px;
+            width:90%;
+            height:80px;
+            margin:auto;
+            
+        }
+       .price1 > h1{
+        color:orange;
+       }
+       .price2 > h1{
+           color:blue;
+       }
+       
+
+    </style>
+</head>
+<body>
+    <div id="parent_div">
+
+            <div>
+            <h1>Choose a plan that right for your business</h1>
+            </div> 
+
+            <div>
+            <p>We collect reviews from our users so you can get honest openion of what an experience with our website are really like!</p>
+            </div> 
+    </div> 
+      
+       <div id="inner_div">
+           <div class="content">
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>Per Month</p>
+            
+            <div>
+                <p>We collect reviews from our users so you can get honest openion of what an experience with our website</p>
+            </div>
+            
+           <button>Start Now</button>
+            </div>
+          
+            <div class="content price1" >
+            <h2>Starter Plan</h2>
+            <h1>$39.00</h1>
+            <p>Per Month</p>
+            <div>
+                <p>We collect reviews from our users so you can get honest openion of what an experience with our website</p>
+            </div>
+           <button>Start Now</button>
+            </div>
+
+            <div class="content price2">
+            <h2>Starter Plan</h2>
+            <h1>$59.00</h1>
+            <p>Per Month</p>
+            <div>
+                <p>We collect reviews from our users so you can get honest openion of what an experience with our website</p>
+            </div>
+            <button>Start Now</button>
+            </div>
+ </div>
+
+
+ 
+</body>
+</html>
