@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasaiCal</title>
+    <style>
+        #head{
+           
+            width:100%;
+
+            
+        
+            
+        }
+        #head>div:first-child{
+           
+            width:240px;
+            
+            margin:auto;
+            margin-top:30px;
+            
+
+        }
+        #head>div:nth-child(2){
+            
+            width:390px;
+            height:450px;
+            padding:10px;
+            margin:auto;
+           
+            
+             
+            justify-content:center;
+            margin-top:20px;
+            border-radius:10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #body{
+           
+            display:grid;
+            grid-template-columns:repeat(4,75px);
+            grid-template-rows:repeat(5,75px);
+            gap:15px;
+            grid-template-areas:
+            "a a a a"
+            "b c d e"
+            "f g h i"
+            "j k l m"
+            "n o p q";
+           
+            
+              
+        }
+        
+        #body div{
+            background-color:rgb(230, 230, 240);
+             border-radius:10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            text-align:center;
+        }
+        #body>div:nth-child(1){
+            grid-area:a;
+            
+            
+        }
+
+        #body>div:nth-child(2){
+            grid-area:b;
+        }
+        #body>div:nth-child(3){
+            grid-area:c;
+        }
+        #body>div:nth-child(4){
+            grid-area:d;
+        }
+        #body>div:nth-child(5){
+            grid-area:e;
+            background-color:black;
+            color:white;
+        }
+        #body>div:nth-child(6){
+            grid-area:f;
+        }
+        #body>div:nth-child(7){
+            grid-area:g;
+        }
+        #body>div:nth-child(8){
+            grid-area:h;
+        }
+        #body>div:nth-child(9){
+            grid-area:i;
+            background-color:black;
+            color:white;
+        }
+        #body>div:nth-child(10){
+            grid-area:j;
+        }
+        #body>div:nth-child(11){
+            grid-area:k;
+        }
+        #body>div:nth-child(12){
+            grid-area:l;
+        }
+        #body>div:nth-child(13){
+            grid-area:m;
+            background-color:black;
+            color:white;
+        }
+        #body>div:nth-child(14){
+            grid-area:n;
+            background-color:red;;
+            color:white;
+        }
+        #body>div:nth-child(15){
+            grid-area:o;
+        }
+        #body>div:nth-child(16){
+            grid-area:p;
+            background-color:black;
+            color:white;
+        }
+       #body>div:nth-child(17){
+            grid-area:q;
+            background-color:black;
+            color:white;
+           
+        }
+       
+        
+       
+
+    </style>
+</head>
+<body>
+    <div id="head">
+             <div><h1>Masai Calculator</h1></div>
+             <div id="body">
+                
+               <div></div>
+               <div><h2>1</h2></div>
+               <div><h2>2</h2></div>
+               <div><h2>3</h2></div>
+               <div><h2>+</h2></div>
+               <div><h2>4</h2></div>
+               <div><h2>5</h2></div>
+               <div><h2>6</h2></div>
+               <div><h2>-</h2></div>
+               <div><h2>7</h2></div>
+               <div><h2>8</h2></div>
+               <div><h2>9</h2></div>
+               <div><h2>*</h2></div>
+               <div><h2>C</h2></div>
+               <div><h2>0</h2></div>
+               <div><h2>=</h2></div>
+               <div><h2>/</h2></div>
+               
+                
+
+
+        </div>
+   
+</body>
+</html>

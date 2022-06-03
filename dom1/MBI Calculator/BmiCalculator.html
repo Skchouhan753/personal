@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Check Your BMI</h1>
+   
+    <h2>Enter your weight and height below to check your BMI results</h2>
+    
+    <h2>Put your weight in here (KG)</h2>
+    
+    <input id="input1" type="number" placeholder="Enter Your weight" value=""/>
+   
+    <h2>And your height in here (CM)</h2>
+    
+    <input id="input2" type="number" placeholder="Enter Your height" value=""/><br>
+    
+    <button onClick="calculate()">Calculate MBI</button>
+    
+    
+    <h1>Your BMI is  which means You are Obese</h1>
+    <h1 id="ans"></h1>
+    <h1 id="remarks"></h1>
+</body>
+</html>
+<script>
+
+
+
+function calculate(){
+    let x=document.getElementById("input1").value;
+    let y=document.getElementById("input2").value;
+    let bmi = x/(y*y);
+    document.getElementById("ans").innerText=bmi;
+    if(bmi<=18.4){
+        document.getElementById("remarks").innerText="UnderWeight";
+    }
+    else if(bmi>=18.5 && bmi<=24.9){
+        document.getElementById("remarks").innerText="NormalWeight";
+    }
+    else if(bmi>=25 && bmi<=29.9){
+        document.getElementById("remarks").innerText="OverWeight";
+    }
+    else if(bmi>=30){
+        document.getElementById("remarks").innerText="Obese";
+    }
+}
+</script>
