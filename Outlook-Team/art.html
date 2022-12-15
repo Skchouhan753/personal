@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art & Entertainment</title>
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    #ads{
+        width:1200px;
+        height:250px;
+        /* border:1px solid black; */
+        margin:auto;
+        margin-bottom:-10px;
+    }
+    #ads img{
+        width:1200px;
+        height:230px;
+        border:1px solid black;
+        margin:auto;
+        margin-bottom:-10px;
+    }
+    h3{
+        margin-top:10px;
+        margin-left: 10px;
+    }
+    h1{
+        color:red;
+        font-size:60px;
+        font-weight:bold;
+        text-align:center;
+        margin-bottom:0px;
+        margin-top:0px;
+        font-family:Arial Black;
+    }
+    h1+p{
+        text-align:center;
+        margin-top:0px;
+        font-size:15px;
+    }
+    h3{
+        margin-top: 10px;
+    }
+    /* ************************** */
+    #navbar>ul li:hover {
+            /* background-color: rgb(230, 228, 228); */
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  */
+            border: 1px solid rgb(212, 209, 209);
+            color: rgb(192, 13, 13);
+        }
+        #navbar {
+            margin: 0px;
+            padding: 0px;
+
+            margin: auto;
+        }
+        #container {
+            margin-top: 30px;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+        #line {
+            background-color: #e00d24;
+            color: #e00d24;
+        }
+        #navbar>ul {
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            position: absolute;
+            margin-left: 90px;
+            list-style-type: none;
+        }
+        #navbar>ul>li {
+            float: left;
+            padding: 5px 7px;
+        }
+        #navbar>ul>li a {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0;
+            color: #515356;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+        #navbar>ul li:hover {
+            background-color: transparent;
+        }
+        #navbar ul ul {
+            display: none;
+        }
+        #outlook {
+            margin-top: -20px;
+        }
+        #outlook>img {
+            height: 40px;
+            width: 15%;
+            /* border: 1px solid; */
+            margin-top: 20px;
+            margin: auto;
+            margin-left: 42%;
+        }
+        #outlook>img+p {
+            margin: auto;
+            text-align: center;
+            color: #515356;
+            font-size: 13px;
+            margin-top: 5px;
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 10px;
+        }
+        #outlook>img+p>span {
+            color: #e00d24;
+            font-weight: bolder;
+        }
+        #outlook>img+p>a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        #tags {
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            margin: auto;
+            /* margin-top: 20px; */
+        }
+        #tags>div>p {
+            font-size: 13px;
+            color: #515356;
+        }
+        #logo {
+            display: flex;
+            width: 10%;
+            justify-content: space-evenly;
+        }
+        #navbar>ul>li>ul li {
+            float: center;
+            padding: 10px;
+            margin: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            /* font-weight: bold; */
+        }
+        #navbar>ul>li:hover>ul {
+            display: block;
+            background: #ccc;
+            position: absolute;
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            width: 100%;
+            /* top:20px; */
+            font-size: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        #navbar>ul>li>ul li {
+            list-style: none;
+            margin-top: 20px;
+            float: left;
+        }
+        #navbar>ul>li>input+img {
+            width: 10px;
+            height: 10px;
+        }
+    /* ******************************** */
+    #ads2{
+        width:100%;
+        height:250px;
+        /* border:1px solid red; */
+        margin:auto;
+        margin-top:30px;
+        /* margin-bottom:10px; */
+        display: flex;
+        justify-content: center;
+        background-color: #EEEEEE;
+         
+    }
+    #ads2 img{
+        border:1px solid black;
+        margin:auto;
+        margin-bottom:400px;
+    }
+    #container{
+        width: 100%;
+        height: 800px;
+        margin-top: 150px;
+        
+        display:grid;
+        background-color: #EEEEEE;
+        justify-content: center;
+        /* border: 1px solid red; */
+        grid-template-columns: repeat(3,500px);
+        grid-template-rows: repeat(1,300px);
+        gap: 5px;
+        
+        grid-template-areas:
+        "a b c";
+    }
+    #container>div:nth-child(1){
+        color:rgb(8, 8, 8);
+        text-align:center;
+        /* border:1px solid red; */
+        grid-area: a;
+        width:500px;
+        height:800px;
+        margin-left:80px;
+        margin-top:-110px;       
+    }
+    #container>div:nth-child(2){
+        color:rgb(8, 8, 8);
+        text-align:center;
+        /* border:1px solid red; */
+        grid-area: b;
+        width:400px;
+        height:900px;
+        margin-left:130px;
+        margin-top:-110px; 
+        text-align:left;   
+    }
+    #container>div:nth-child(2) hr+img{
+        width:370px;
+        height:130px;
+        margin-top:8px;
+        margin-left:10px;
+    }
+    #container>div:nth-child(2) a+p{
+        margin-left:0px;
+        text-align: justify;
+    }
+
+    #container>div:nth-child(3){
+        color:rgb(8, 8, 8);
+        text-align:center;
+        /* border:1px solid red; */
+        grid-area: c;
+        width:350px;
+        height:700px;
+        /* margin-right:10px; */
+        margin-top:-110px;
+        margin-left:50px;
+        text-align:left;
+       
+    }
+    #container>div:nth-child(3) hr+img{
+        width:370px;
+        height:130px;
+        margin-top:8px;
+        margin-left:5px;
+    }
+    #container>div:nth-child(3) img+a{
+        margin-left:10px;
+        text-align: justify;
+    }
+    #container>div:nth-child(1) img{
+        width:450px;
+        height:500px;
+    }
+    #container>div:nth-child(1) a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    text-align:left;
+    margin-top:10px;
+    font-size:35px;
+    margin-left: 5px;
+    }
+    #container>div:nth-child(1) a:hover{
+    color:red;
+    }
+    #container>div:nth-child(1) h2{
+        font-size:20px;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 5px;
+
+    }
+    #container>div:nth-child(1) h2+p{
+        text-align: left;
+        margin-left: 5px;
+        margin-top:20px;
+        color:red;
+    }
+    #container>div h1{
+        margin-top:10px;
+        color:black;
+        font-size:18px;
+        text-align:center;
+    }
+    #container>div h1+h1{
+        margin-top:20px;
+        color:rgb(214, 21, 21);
+        font-size:18px;
+        text-align:center;
+    }
+    #container>div:nth-child(2) a{
+        font-size:20px;
+        text-decoration:none;
+        margin-top:20px;
+        margin-bottom:10px;
+        color:black;
+    }
+    #container>div:nth-child(2) img{
+        width:390px;
+
+    }
+    #container>div:nth-child(2) a:hover{
+        color:rgb(204, 11, 11);
+    }
+    #container>div:nth-child(2) p{
+        font-size:18px;
+        text-align:justify;
+        margin-top:25px;
+        margin-bottom:10px; 
+    }
+    #container>div:nth-child(2) p+p{
+        color:red;
+    }
+    #container>div:nth-child(2) img+p{
+    color:red;
+    font-size:12px;
+    margin-top:-8px;
+    }
+    #container>div:nth-child(2) hr+p{
+    color:red;
+    font-size:15px;
+    margin-top:5px;
+    }
+    #container>div:nth-child(3) img+p{
+    color:red;
+    font-size:15px;
+    margin-top:5px;
+    margin-bottom:10px;
+    text-align:left;
+    }
+    #container>div:nth-child(3) p+p{
+        color:red;
+    }
+    #container>div:nth-child(3) img{
+        width:360px;
+    }
+    #container>div:nth-child(3) a{
+        font-size:20px;
+        color:black;
+        text-decoration:none;
+        
+    }
+    #container>div:nth-child(3) a:hover{
+        color:rgb(216, 11, 11);
+    }
+    #container>div:nth-child(3) a+p{
+        font-size:18px;
+        text-align:justify;
+        margin-top:18px;
+        margin-bottom:10px; 
+    }
+    #container>div:nth-child(3) hr+p{
+        font-size:15px;
+        text-align:justify;
+        margin-top:15px;
+        margin-bottom:10px;
+        color:red; 
+    }
+/* ***************box******************** */
+#box{
+    width:100%;
+    height:1600px;
+    /* border: 1px solid red; */
+    /* margin:auto; */
+    display:grid;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(14,233px);
+    gap:30px;
+    grid-template-areas:
+   "a a a b b"
+   "c c c d d"
+   "e e e f f"
+   "g g g h h"
+   "i i i j j"
+   "k k k l l"
+}
+#box>div:nth-child(1){
+    grid-area: a;
+    width:900px;
+    /* border: 1px solid red; */
+    display:flex;
+    /* width:910px; */
+    margin-left:5px;
+    
+}
+#box>div:nth-child(1) div{
+width:500px;
+height:200px;
+text-align: justify;
+/* border: 1px solid red; */
+}
+#box>div:nth-child(1) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(1)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(1)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+
+}
+#box>div:nth-child(1) a:hover{
+color:rgb(204, 15, 15);
+}
+#box>div:nth-child(1)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+
+#box>div:nth-child(2){
+    grid-area: b;
+    /* border: 1px solid red; */
+    display:flex;
+    width:400px;
+    height:350px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#box>div:nth-child(2)>div img{
+width:400px;
+height:230px;
+}
+#box>div:nth-child(2)>div h1{
+font-size:20px;
+color:grey;
+text-align:left;
+}
+#box>div:nth-child(2)>div a{
+font-size:20px;
+text-align:left;
+color:black;
+text-decoration: none;
+}
+#box>div:nth-child(2)>div a:hover{
+color:grey;
+}
+
+
+
+#box>div:nth-child(3){
+    grid-area: c;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(3) div{
+    width:500px;
+    height:210px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(3) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(3)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(3)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(3) a:hover{
+color:rgb(193, 18, 18);
+}
+#box>div:nth-child(3)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+
+
+#box>div:nth-child(4){
+    grid-area: d;
+    /* border: 1px solid red; */
+    display:flex;
+    width:400px;
+    
+}
+#box>div:nth-child(5){
+    grid-area: e;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(5) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(5)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(5)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(5) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(5) a:hover{
+color:rgb(214, 10, 10);
+}
+#box>div:nth-child(5)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+
+
+#box>div:nth-child(6){
+    grid-area: f;
+    /* border: 1px solid red; */
+    display:flex;
+    width:520px;
+    height:170px;
+    margin-top:-100px;
+    /* background-color: #EEEEEE; */
+    margin-left:-70px;
+}
+#box>div:nth-child(6) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(6) h3{
+text-align:center;
+margin-bottom:-20px;
+}
+#box>div:nth-child(6) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color: black;
+}
+#box>div:nth-child(6) a:hover{
+color:red;
+}
+
+
+#box>div:nth-child(7){
+    grid-area: g;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(7) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(7)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(7)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(7) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(7) a:hover{
+color:rgb(183, 15, 15);
+}
+#box>div:nth-child(7)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+#box>div:nth-child(8){
+    grid-area: h;
+    /* border: 1px solid red; */
+    display:flex;
+    width:520px;
+    height:170px;
+    margin-top:-170px;
+    margin-left: -70px;
+}
+#box>div:nth-child(8) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(8) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color: black;
+}
+#box>div:nth-child(8) a:hover{
+color:red;
+}
+
+#box>div:nth-child(9){
+    grid-area: i;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+    
+}
+#box>div:nth-child(9) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(9)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(9)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(9) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(9) a:hover{
+color:rgb(194, 28, 28);
+}
+#box>div:nth-child(9)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+#box>div:nth-child(10){
+    grid-area: j;
+    /* border: 1px solid red; */
+    display:flex;
+    width:520px;
+    height:170px;
+    margin-top:-235px;
+    margin-left: -70px;
+}
+#box>div:nth-child(10) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(10) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color: black;
+}
+#box>div:nth-child(10) a:hover{
+color:red;
+}
+
+#box>div:nth-child(11){
+    grid-area: k;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(11) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(11)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(11)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(11) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(11) a:hover{
+color:rgb(190, 16, 16);
+}
+#box>div:nth-child(11)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+#box>div:nth-child(12){
+    grid-area: l;
+    width:520px;
+    height:170px;
+    margin-top:-285px;
+    margin-left: -70px;
+    display:flex;
+}
+#box>div:nth-child(12) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(12) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color:black
+}
+#box>div:nth-child(12) a:hover{
+color:red;
+}
+#adv{
+    
+    width:100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+}
+#adv img{
+    width:600px;
+    height:200px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div id="ads"><img src="https://tpc.googlesyndication.com/simgad/3674935640259450259"></div>
+    <div id="tags">
+        <div>
+            <p> Friday, Jun 17, 2022
+            </p>
+        </div>
+        <div id="logo">
+            <a href="https://www.facebook.com/Outlookindia"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a>
+            <a href="https://www.instagram.com/outlookindia/"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+        </div>
+        <div id="outlook">
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="outlook">
+            <p><a href="login.html">LOGIN</a> <span>|</span>
+                <a href="signup.html">SUBSCRIBE</a></p>
+        </div>
+    <nav id="navbar">
+        <ul>
+            <li type="none"><a href="index.html">HOME</a></li>
+            <li type="none"><a>OUTLOOK</a>
+                <ul>
+                    <li><a href="mazagine.html">Magazine</a></li>
+                    <li><a href="indiaNews.html">India News</a></li>
+                    <li><a href="international.html">International News</a></li>
+                    <li><a href="Culture.html">Culture</a></li>
+                    <li><a href="studyAbroad.html">Study Abroad</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a>BUSINESS</a>
+
+                <ul>
+                    <li><a href="S-Magazine.html">Magazine</a></li>
+                    <li><a href="S-Headline.html">Headlines</a></li>
+                    <li><a href="R-BigStory.html">Big Story</a></li>
+                    <li><a href="R-Enterprise.html">Enterprise</a></li>
+                    <li><a href="R-Strategy.html">Strategy</a></li>
+                    <li><a href="R-Startups.html">Startups</a></li>
+                    <li><a href="R-Perspective1.html">Prespective</a></li>
+                    <li><a href="S-PixStory.html">Pixstory</a></li>
+                    <li><a href="S-Videos.html">Videos</a></li>
+                    <li><a href="S-Women.html">Women</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="OutlookMoney.html">MONEY</a></li>
+            <li type="none"><a href="crypto.html">CRYPTO CORNER</a></li>
+            <li type="none"><a>TRAVEL</a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">See</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="">Responsible</a></li>
+                    <li><a href="">Tourism</a></li>
+                    <li><a href="">OT</a></li>
+                    <li><a href="">Quiz</a></li>
+                    <li><a href="">Guide</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="sports.html">SPORTS</a></li>
+            <li type="none"><a href="videos.html">VIDEOS</a></li>
+            <li type="none"><a href="art.html">ENTERTAINMENT</a></li>
+            <li type="none"><a href="photos.html">PHOTOS</a></li>
+
+            <li type="none"><a href="mazagine.html">MAZAGINE</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="latestIssue.html">Latest Issue</a></li>
+
+                    <li><a href="indiaNews.html">India</a></li>
+                    <li><a href="international.html">World</a></li>
+                    <li><a href="business.html">Bussiness</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="sports.html">sports</a></li>
+                    <li><a href="international.html">The News</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="art.html">Art & Entertainment</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+
+                </ul>
+            </li>
+            <li type="none"><a href="hindi">HINDI</a></li>
+            <li type="none"><a href="poshan.html">POSHAN</a></li>
+
+            <li type="none"><a href="others">OTHERS</a>
+                <ul>
+                    <li><a href="poshan.html">Poshan</a></li>
+                    <li><a href="">Planet</a></li>
+                    <li><a href="">Outlook</a></li>
+                    <li><a href="">Sportlight</a></li>
+                    <li><a href="">Krishi</a></li>
+                </ul>
+            </li>
+            <li><input id="search" type="search"><img id="img_search"
+                    src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+            </li>
+        </ul>     
+    </nav><br><br>
+    <hr>
+    <h3>ART & ENTERTAINMENT</h3>
+<div id="container">
+
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1655457424.webp" alt=""><br>
+    <a href="https://www.outlookindia.com/art-entertainment/sriya-reddy-stories-drive-success-language-doesn-t-matter-news-202955">Sriya Reddy: Stories Drive Success, Language Doesn't Matter</a>
+    <h2>Tamil actress Sriya Reddy, who is gearing up for the release of her upcoming series 'Suzhal- The Vortex', opines that the language of cinema is very much universal in its essence as most rooted and local stories are being preferred by the audience all over...</h2>
+    <p>17 June 2022</p>
+</div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1655457184.webp" alt="">
+    <a href="https://www.outlookindia.com/art-entertainment/ethan-hawke-to-star-in-showtime-s-limited-series-the-whites--news-202954">Ethan Hawke To Star In Showtime's Limited Series ‘The Whites’</a>
+    <p>Limited series 'The Whites' will feature actor Ethan Hawke in the lead role. It is written by Jez Butterworth who is famous for writing 'Ford v. Ferrari'.</p>
+    <p>17 June 2022</p>
+    <hr>
+    <a href="https://www.outlookindia.com/art-entertainment/drake-releases-seventh-studio-album-honestly-nevermind--news-202953">Drake Releases Seventh Studio Album 'Honestly, Nevermind'</a>
+    <p>As a follow-up to last year's 'Certified Lover Boy', Drake has released his seventh studio album titled 'Honestly, Nevermind'. Earlier, the rapper made the...</p>
+    <hr>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1655555906.webp" alt="">
+    <a href="https://www.outlookindia.com/art-entertainment/bvk-vagdevi-wins-telugu-indian-idol-chiranjeevi-rana-daggubati-sai-pallavi-geeta-arts-godfather-news-203196">BVK Vagdevi Wins Telugu ‘Indian Idol’; Says, 'Ever Since The Win, My Life Is A Little Glorified'</a>
+    <p>The first southern iteration of the popular ‘Indian Idol’ franchise saw singer BVK Vagdevi lift the winner’s trophy. She also received prize money of Rs...</p>
+</div>
+<div>
+        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1655455954.webp">
+        
+        <a href="https://www.outlookindia.com/art-entertainment/sai-pallavi-comment-on-lynching-of-cow-smugglers-provokes-police-complaint-news-202952">Sai Pallavi Comment On Lynching Of 'Cow Smugglers' Provokes Police Complaint</a>
+        <p>A statement by Sai Pallavi in a YouTube interview on the lynching of alleged cow smuggler has triggered a social media controversy just as her Telugu film,...</p>
+        <p>17 June 2022</p>    
+        <hr>
+        
+        <a href="https://www.outlookindia.com/art-entertainment/julianne-moore-oscar-isaac-to-headline-spotify-podcast-thriller-case-63--news-202949">Julianne Moore, Oscar Isaac To Headline Spotify Podcast Thriller 'Case 63'</a>
+        <p>Actors Julianne Moore and Oscar Isaac will star in and produce scripted original podcast ‘Case 63' on Spotify. It is an adaptation of 'Caso 63', ...</p>
+        <hr>
+        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1649337960.webp" alt="">
+        <a href="https://www.outlookindia.com/art-entertainment/-kya-din-the-wo-bhi-big-b-recalls-days-he-had-five-blockbusters-in-one-year-news-203122">'Kya Din The Wo Bhi': Big B Recalls Days He Had Five Blockbusters In One Year</a>
+        <p>Megastar Amitabh Bachchan went down memory lane and reminisced the days he had a string of five blockbusters in just one year.</p>
+
+    </div>
+
+
+
+</div>
+
+   <div id="ads2"><img src="https://tpc.googlesyndication.com/simgad/3205750195975070196" alt=""></div>
+<div id="box">
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655454439.webp" alt="">
+            
+        <div>
+            <a href="https://www.outlookindia.com/art-entertainment/robert-plant-said-no-to-a-cameo-in-game-of-thrones--news-202947">Robert Plant Said No To A Cameo In 'Game Of Thrones'</a><br><br>
+            <h3>Led Zeppelin frontman Robert Plant has said that he rejected a cameo in the TV adaptation of George R.R. Martin's award-winning fantasy saga 'Game of Thrones'...</h3>
+        </div>
+
+    </div>
+<div>
+    <div>
+        <h3>ADVERTISEMENT</h3><br>
+       <img src="https://secure-ds.serving-sys.com/resources/PROD/asset/1073745701/IMAGE/20220610/outlook_GBD-200_300x250_71496720468432328.jpg" alt="">
+    </div>
+    
+</div>
+
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655453735.webp" alt="">
+        <div>
+            <a href="https://www.outlookindia.com/art-entertainment/akshay-kumar-aamir-khan-poised-for-a-box-office-face-off-on-august-11-news-202945">Akshay Kumar, Aamir Khan Poised For A Box-Office Face-Off On August 11</a><br><br>
+            <h3>Bollywood stars Akshay Kumar and Aamir Khan's upcoming films 'Raksha Bandhan' and 'Laal Singh Chaddha' will be seen clashing at the box office as their films...
+
+            </h3>
+        </div>
+    </div>
+
+<div>
+    
+
+</div>
+
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655451120.webp" alt="">
+        <div>
+            
+            <a href="https://www.outlookindia.com/art-entertainment/jon-snow-game-of-thrones-spin-off-series-in-the-works-with-kit-harington-news-202936">Jon Snow ‘Game of Thrones’ Spin-Off Series In The Works With Kit Harington</a><br><br>
+            <h3>
+                Kit Harington has been cast in the first potential 'Thrones' project set after the events of the first series, reprising his fan-favorite character.
+            </h3>
+        </div>
+
+    </div>
+<div>
+    
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1652776268.webp" alt="">
+    <a href="https://www.outlookindia.com/art-entertainment/taarak-mehta-ka-ooltah-chashmah-actor-sailesh-lodha-to-host-poetry-show-news-202912">Taarak Mehta Ka Ooltah Chashmah Actor Shailesh Lodha To Host Poetry Show</a>
+</div>
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655450573.webp" alt="">
+        <div>
+            
+            <a href="https://www.outlookindia.com/art-entertainment/parambrata-chatterjee-to-play-lead-in-director-pawan-wadeyar-s-notary--news-202931">Parambrata Chatterjee To Play Lead In Director Pawan Wadeyar's 'Notary'</a><br><br>
+            <h3>Actor-turned-director Parambrata Chatterjee is all set to play the lead in Kannada director Pawan Wadeya's maiden Bollywood film titled 'Notary'.
+
+            </h3>
+        </div>
+    </div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655450911.webp" alt="">
+    <a href="https://www.outlookindia.com/art-entertainment/vikrant-massey-chuffed-about-shooting-sector-36-in-delhi-news-202929">Vikrant Massey Chuffed About Shooting 'Sector 36' In Delhi</a>
+</div>
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655440718.webp" alt="">
+        <div>
+            <a href="https://www.outlookindia.com/art-entertainment/from-dev-anand-to-dharmendra-hemant-kumar-was-the-voice-of-his-time-news-202904">From Dev Anand To Dharmendra, Hemant Kumar Was The Voice Of His Time</a><br><br>
+            <h3>Hemant Kumar Mukhopadhyay, or Hemant Kumar as he is better known, was born on June 16, 1920. He sang for almost all the top heroes of his time, from Dev Anand...</h3>
+        </div>
+    </div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1655394509.webp" alt="">
+    <a href="https://www.outlookindia.com/art-entertainment/-ms-marvel-reveals-her-love-for-shah-rukh-khan-news-202855">'Ms Marvel' Reveals Her Love For Shah Rukh Khan</a>
+</div>
+    <div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/Bill_Cosby_1655392777.webp" alt="">
+        <div>
+            
+            <a href="https://www.outlookindia.com/art-entertainment/attorneys-lock-horns-during-bill-cosby-s-civil-case-cosby-gives-trial-a-miss-news-202850">Attorneys Lock Horns During Bill Cosby's Civil Case, Cosby Gives Trial A Miss</a><br><br>
+            <h3>Comedian-actor Bill Cosby's civil case with regards to sexual molestation of Judy Huth at the Playboy Mansion 47 years ago, saw a major showdown between...
+
+            </h3>
+        </div>
+    </div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1649911087.webp" alt="">
+    <a href="https://www.outlookindia.com/art-entertainment/sudha-chandran-turns-anchor-for-the-show-crime-alert--news-202917">Sudha Chandran Turns Anchor For The Show 'Crime Alert'</a>
+
+</div>
+
+</div>
+<hr>
+<div id="adv">
+<img src="https://tpc.googlesyndication.com/simgad/16410939793761206881?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmDz52mixHwp77mVUfGVkSg98gQAw" alt="">
+</div>
+</body>
+</html>
+
+   
+
+
+
+
+
+
+
+
+   
+    
+   
+    
+    
+    
+    
+    

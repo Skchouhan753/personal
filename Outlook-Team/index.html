@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #banner2 {
+            width: 87%;
+            border: 1px solid red;
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            background-color: #fbfbfb;
+            margin: auto;
+            
+        }
+
+        #banner2>div>img {
+            border: 1px black;
+        }
+
+        #navbar2 {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            
+            justify-content: space-between;
+            
+            
+        }
+        #navbar2>div{
+            /* display: flex; */
+            width: 15%;
+            /* border: 1px solid teal; */
+            /* justify-content: center;
+            align-items: center; */
+            
+
+          
+        }
+        #navbar2>div>img{
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            padding-bottom: 10px;
+        }
+        p{
+            margin-left: 110px;
+        }
+        img+a{
+           margin-left: 40px;
+           font-size: 15px;
+           color: grey;
+           text-decoration: none;
+           
+        }
+        a+a{
+            font-size: 15px;
+            color: rgb(42, 28, 28);
+            text-decoration: none;
+        }
+       .facebook{
+        margin-left: 10px;
+        margin-top: 10px;
+       }
+       #rightsite{
+        margin-top: 10px;
+       }
+      #navbar1{
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+      }
+       
+      /* hr{
+        width: 100%;
+    
+        margin-top: 60px; */
+      
+      #container1{
+        width: 90%;
+        /* height: 1000px; */
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 22px;
+        display: flex;
+        gap: 15px;
+      }
+      #container1>div:nth-child(1){
+        width: 70%;
+        /* border: 1px solid red; */
+      }
+      #container1>div:nth-child(1)>img{
+           width: 100%;
+      }
+      #box2{
+        width: 30%;
+    
+      }
+     #box2>div:nth-child(1){
+        width: 100%;
+        /* border:1px solid red ; */
+     }
+     #box2>div:nth-child(2){
+        width: 100%;
+        
+        margin-top: 20px;
+     }
+     #box2>div:nth-child(2)>img{
+        width: 100%;
+     }
+     #box2>div:nth-child(2)>img+h2{
+        width: 70%;
+     }
+     #box2>div:nth-child(2)>img+h2:hover{
+        color: red;
+     }
+     h2+p{
+        font-size: 20px;
+        margin-left: -4px;
+        margin-top: 15px;
+        width: 90%;
+        margin-bottom: 10px;
+     }
+     h5+p{
+        display: inline;
+        margin-left: -1px;
+        
+     }
+     p+h5{
+        display: inline;
+        color: red;
+        
+     }
+     #box2>div:nth-child(3){
+        width: 80%;
+        /* border: 1px solid red; */
+        margin-top: 15px;
+        
+     }
+     #box2>div:nth-child(4){
+        width: 80%;
+        margin-top: 20px;
+
+     }
+     #box2>div:nth-child(4)>img{
+        width: 100%;
+     }
+     #box2>div:nth-child(4)>img+h2{
+        margin-top: 10px;
+     }
+     #box2>div:last-child>img{
+        width: 100%;
+     }
+    
+    
+     #box1{
+        width: 100%;
+        /* height: 400px; */
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+     }
+     #box1>div{
+        width: 32%;
+        /* border: 1px solid red; */
+     }
+     #box1>div>p{
+        margin-left: -0px;
+        margin: 15px 0px 15px;
+        color: red;
+     }
+     #box1>div>h2+p{
+        color: black;
+        width: 100%;
+     }
+     #box1>div>h2+p+p{
+        font-size: 12px;
+     }
+     
+     #box1>div>p+h2{
+        width: 100%;
+     }
+
+     #container1>div:nth-child(1)>h1{
+        color: rgb(181, 6, 6);
+        font-size: 20px;
+        margin-top: 15px;
+     }
+     #box1>div>img{
+        width: 100%;
+     }
+     #container1>div:nth-child(1)>h2{
+        font-size: 40px;
+        margin-top: 15px;
+     }
+     
+     h2+h5{
+        display: inline;
+        color: red;
+        margin-top: 15px;
+    
+     }
+     h5+p{
+        display: inline;
+        font-size: 15px;
+        
+        
+     }
+    #animal{
+        width: 100%;
+        /* height: 200px; */
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: 200px auto;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    /* #animal>div{
+        /* border: 1px solid red; */
+    /* } */ 
+    #animal>div:nth-child(1)>p{
+        font-size: 18px;
+        margin-left: -0px;
+        margin-top: 18px;
+        line-height: 30px;
+    }
+    #firstul{
+        list-style-type: square;
+        
+    }
+    #firstul,li{
+        font-size: 18px;
+        margin-top: 18px;
+    }
+    li:hover{
+        color: red;
+    }
+    #animal2{
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,50% 50%);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    /* #animal2>div{ */
+        /* border: 1px solid red; */
+    /* } */
+    #animal2>div>img{
+        width: 100%;
+    }
+    #animal2>div:nth-child(1)>p{
+        display: inline;
+        margin-left: -3px;
+        
+    }
+    #animal2>div:nth-child(1)>h1+p{
+        color: red;
+        
+    }
+    #animal2>div:nth-child(1)>h1{
+        padding-bottom: 15px;
+    }
+    #animal2>div:nth-child(1)>p+p+p{
+        display: block;
+        font-size: 18px;
+        width: 95%;
+        margin-top: 15px;
+        
+    }
+    #animal2>div:nth-child(2)>h1{
+        margin-left: 12px;
+        padding-bottom: 10px;
+    }
+    #animal2>div:nth-child(2)>h1~p{
+        display: inline;
+        margin-top: 18px;
+        margin-left: -0px;
+        font-size: 15px;
+
+    }
+    #animal2>div:nth-child(2)>h1+p{
+         color: red;
+    }
+    #innerbox1{
+        width: 100%;
+        
+        /* border: 1px solid red ; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin-top: 15px;
+    
+    }
+    /* #innerbox1>div{
+        /* border: 1px solid red; */
+    
+    #innerbox1>div>p{
+        font-size: 20px;
+        margin-left: -0px;
+        width: 100%;
+    }
+    #innerbox1>div>img{
+        width: 100%;
+    }
+    #innerbox2{
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        
+        background-color: #f5f5f5;
+    }
+    /* #innerbox2>div{
+        /* border: 1px solid black; */
+    /* } */ 
+    #innerbox2>div>h3{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    #innerbox2>div>h3~p{
+        width: 100%;
+        margin-left:-0px;
+    }
+    #innerbox2>div>h3+p{
+        color: red;
+
+    }
+    #innerbox2>div:nth-child(2)>p{
+        width: 100%;
+        margin-left: -0px;
+        font-size: 18px;
+    }
+    #footer{
+        width: 100%;
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        /* border: 1px solid red; */
+        background-color:#212020;
+        color: white;
+        margin-top: 15px;
+    }
+   #footer>div{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 40px;
+    
+   }
+   #footer>div>p{
+    text-align: left;
+    margin-top: 9px;
+    font-size: 13px;
+    /* margin-left: -0px; */
+    margin-left: 40px;
+    font-family:"Open Sans", sans-serif;
+    
+   }
+   #footer>div>p:hover{
+        color:#bc081e;
+   }
+   
+   #footer>div>h3{
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 13px;
+    font-family:"Open Sans", sans-serif;
+   }
+   #footerhr{
+    width: 60%;
+    
+    margin-left: 40px;
+    font-weight: 0px;
+   }
+   #footer>div>p>img{
+       margin-top: 5px;
+       margin-left: 15px;
+   }
+   #footer1{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    background-color:#181818 ;
+    color:rgb(162, 156, 156) ;
+   }
+  #footer1>div:nth-child(1)>a{
+    color:rgb(162, 156, 156) ;
+    margin-left: 10px;
+    
+  }
+  #white{
+    margin-left: 30px;
+  }
+  #black{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #navbar>ul a:hover {
+            /* background-color: rgb(230, 228, 228); */
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  */
+            border: 1px solid rgb(212, 209, 209);
+            color: rgb(192, 13, 13);
+
+        }
+
+        #navbar {
+            margin: 0px;
+            padding: 0px;
+
+            margin: auto;
+
+        }
+
+        #navbar>ul {
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            position: absolute;
+            margin-left: 20px;
+            list-style-type: none;
+
+
+
+
+        }
+
+        #navbar>ul>li {
+            float: left;
+            padding: 5px 7px;
+
+        }
+
+        #navbar>ul>li a {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0;
+            color: #515356;
+
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+
+
+
+
+        }
+
+        #navbar>ul li:hover {
+            background-color: transparent;
+        }
+
+        #navbar ul ul {
+            display: none;
+
+
+        }
+
+        #navbar>ul>li>ul li {
+            float: center;
+            padding: 10px;
+            margin: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+
+            /* font-weight: bold; */
+
+
+        }
+
+        #navbar>ul>li:hover>ul {
+            display: block;
+            background: #ccc;
+            position: absolute;
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            width: 100%;
+            /* top:20px; */
+            font-size: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        #navbar>ul>li>ul li {
+            list-style: none;
+            margin-top: 20px;
+            float: left;
+
+        }
+
+        #navbar>ul>li>input+img {
+            width: 10px;
+            height: 10px;
+        }
+        #container {
+            margin-top: 30px;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+  #banner{
+    text-align: center;
+    margin: auto;
+    
+    
+  }
+  
+
+    
+       
+    </style>
+</head>
+
+<body>
+    
+    <div id="banner">
+        <div> <img
+                src="https://secure-ds.serving-sys.com/resources/PROD/asset/1073745701/IMAGE/20220610/outlook_GBD-200_1280x250_71496722076948205.jpg"
+                alt="error"></div>
+
+    </div>
+    <div id="navbar2">
+        
+            <p>Tuesday,Jun 14,2022</p>
+            <div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="error">
+                 <a href="login.html">LOGIN</a> | 
+                 <a href="">SUBSCRIBE</a>
+            </div>
+            
+        
+        <div id="rightsite">
+            <a href="https://www.facebook.com/Outlookindia" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="error"></a> 
+
+            <a href="https://twitter.com/outlookindia/" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a> 
+
+            <a href="http://www.instagram.com/outlookindia" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="error"></a> 
+
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="error"></a> 
+        </div>
+    </div>
+ 
+
+
+<div id="container">
+    <div id="navbar">
+        <ul>
+            <li type="none"><a href="home">HOME</a></li>
+            <li type="none"><a href="outlook">OUTLOOK</a>
+                <ul id="x">
+                    <li><a href="mazagine.html">Magazine</a></li>
+                    <li><a href="indiaNews.html">India News</a></li>
+                    <li><a href="international.html">International News</a></li>
+                    <li><a href="Culture.html">Culture</a></li>
+                    <li><a href="studyAbroad.html">Study Abroad</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="businees.html">BUSINESS</a>
+
+                <ul>
+                    <li><a href="S-Magazine.html">Magazine</a></li>
+                    <li><a href="S-Headline.html">Headlines</a></li>
+                    <li><a href="R-BigStory.html">Big Story</a></li>
+                    <li><a href="R-Enterprise.html">Enterprise</a></li>
+                    <li><a href="R-Strategy.html">Strategy</a></li>
+                    <li><a href="R-Startups.html">Startups</a></li>
+                    <li><a href="R-perspective1.html">Prespective</a></li>
+                    <li><a href="S-PixStory.html">Pixstory</a></li>
+                    <li><a href="S-Videos.html">Videos</a></li>
+                    <li><a href="S-Women.html">Women</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="OutlookMoney.html">MONEY</a></li>
+            <li type="none"><a href="crypto.html">CRYPTO CORNER</a></li>
+            <li type="none"><a href="travel.html">TRAVEL</a>
+
+                <ul id="innerMenu3">
+                    <li><a href="travel.html">Home</a></li>
+                    <li><a href="">See</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="">Responsible</a></li>
+                    <li><a href="">Tourism</a></li>
+                    <li><a href="">OT</a></li>
+                    <li><a href="">Quiz</a></li>
+                    <li><a href="">Guide</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="sports.html">SPORTS</a></li>
+            <li type="none"><a href="videos.html">VIDEOS</a></li>
+            <!-- <li type="none"><a href="entertainment">ENTERTAINMENT</a></li>  -->
+            <li type="none"><a href="photos.html">PHOTOS</a></li>
+
+            <li type="none"><a href="mazagine.html">MAZAGINE</a>
+                <ul id="innerMenu4">
+                    <li><a href="mazagine.html">Home</a></li>
+                    <li><a href="latestIssue.html">Latest Issue</a></li>
+                    
+                    <li><a href="indiaNews.html">India</a></li>
+                    <li><a href="international.html">World</a></li>
+                    <li><a href="business.html">Bussiness</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="sports.html">sports</a></li>
+                    <li><a href="international.html">The News</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="art.html">Art & Entertainment</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+
+                </ul>
+            </li>
+            <li type="none"><a href="hindi">HINDI</a></li>
+            <li type="none"><a href="poshan.html">POSHAN</a></li>
+
+            <li type="none"><a href="otrhers">OTHERS</a>
+                <ul id="innerMenu5">
+                    <li><a href="poshan.html">Poshan</a></li>
+                    <li><a href="">Planet</a></li>
+                    <li><a href="">Outlook</a></li>
+                    <li><a href="">Sportlight</a></li>
+                    <li><a href="">Krishi</a></li>
+                </ul>
+            </li>
+            <li><input id="search" type="search"><img id="img_search"
+                    src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+            </li>
+        </ul>
+    </div>
+</div>
+<br><br>
+<hr id="line">
+        
+
+        <div id="container1">
+            <div >
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655265518.webp" alt="error">
+                 <h2>Understanding The Crux Of Human-Animal Conflict In India</h2>
+                 <h5>MAYANK JAIN PARICHHA/</h5>
+                 <p>last update at 10:25 am</p>
+
+                 <div id="animal">
+                    <div>
+                       <p>With emerging challenges like climate change, India needs a strong political will to address issues of wildlife conservation. India is home to various critically endangered species that require consistent efforts.</p> 
+                    </div>
+                    <div>
+                        <ul id="firstul">
+                            <li>Why Introducing African Cheetahs To India Is A ‘Vanity Project’</li>
+                            <li>How Better Road Designs Can Cut Down Roadkill</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr id="black">
+                <div id="animal2">
+                    <div>
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655221031.webp" alt="error">
+                        <h1>Leopards: The Unwitting Victims of Tiger Conservation</h1>
+
+                        <p>MAYANK JAIN PARICHHA/</p>
+                        <p> last updated at 10:27 am</p>
+                        <p>India's tiger-centric conservation approach is affecting the habitat of other carnivores, especially the leopard.</p>
+                    </div>
+                    <div>
+                        <h1>How Better Road Designs Can Cut Down Roadkill</h1>
+                        <p>MAYANK JAIN PARICHHA /</p>
+                        
+                        <p>ast updated at 10:30 am</p>
+
+                        <div id="innerbox1">
+                            <div>
+                                <p>Innovations like underpasses, overpasses, and horizontal flyovers adopted in the West cannot entirely eliminate the risk of roadkill, but can certainly reduce it.</p>
+                            </div>
+                            <div>
+                                <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655223129.webp" alt="error">
+                            </div>
+                        </div>
+                           <div id="innerbox2">
+                             <div>
+                                <h3>Why Introducing African Cheetahs To India Is A ‘Vanity Project’</h3>
+                                <p>Mayank Jain Parichha/ </p>
+                                <p>ast Updated at 10:27 am</p>
+                             </div>
+                             <div>
+                                <p>The initiative to get African cheetahs is neither science-based nor a national conservation priority, which would significantly distract from higher priority conservation issues like the much-delayed lion translocation. </p>
+                             </div>
+                           </div>
+                    </div>
+                    
+                 </div>
+
+                <h1>CRYPTO CORNER</h1>
+                 <div id="box1">
+                    <div>
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/._1655114571.webp" alt="error">
+                        <p>OUTLOOK MONEY</p>
+                        <h2>Crypto Exchanges Halting Withdrawal and Deposits, What Does It Mean for Investors?</h2>
+                        <p>Crypto exchanges have now begun halting withdrawals and deposits, thus triggering panic among crypto investors. What is the reason and what should you do as an investor? Read all the details here</p>
+                        <p>HARSH KUMAR / last updated at 7:58 am</p>
+                    </div>
+                    <div>
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1652330083.webp" alt="error">
+                        <p>OUTLOOK MONEY</p>
+                        <h2>US SEC Looks Into Insider Trading Safeguards At Exchanges; Crypto Market Still In Red</h2>
+                        <p>Amid the ongoing crypto market crash, US SEC is looking at insider trading safeguards in crypto exchanges. Crypto investors push the panic button while the marketcap is still well below the $1 trillion mark.</p>
+                        <p>OUTLOOK MONEY TEAM/ last updated at 9:34 am</p>
+                    </div>
+                    <div>
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/Bitcoin_1655228320.webp" alt="error">
+                        <p>OUTLOOK MONEY</p>
+                        <h2>Binance’s Original Crypto Token Under US SEC Scanner For Non-Registration In 2017</h2>
+                        <p>Binance recently came into the news again, but this time it’s because the US SEC is investigating its original BNB token ‘ERC-20’ for non-registration in 2017.</p>
+                        <p>OUTLOOK MONEY TEAM/ last updated at 3:26 pm</p>
+                    </div>
+                
+                 </div>
+            </div>
+        
+            <div id="box2">
+                <div>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/free_files/jpg/300-120_2022_06_13_080305.jpg" alt="error">
+              </div>
+              <div>
+                <img src=https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1654151729.webp alt="error">
+
+                <h2>From Naya Dawn To Daily Violence, Kashmir Post-August 5, 2019</h2>
+
+                <p>Three years after the abrogation of Article 370, there is no elected government in Jammu and Kashmir and targeted killings have gained pace despite frequent encounters.</p>
+
+                <h5>NASEER GANAI /</h5>
+                <p>last updated at 8:58 am</p>
+              </div>
+               <div>
+                    <h4>ADVERTISEMENT</h4>
+                <img src="https://imgnew.outlookindia.com/uploadimage/library/free_files/gif/300x25_2022_06_07_020134.gif" alt="">
+               </div>
+                <div id="white">
+                    <img src="https://secure-ds.serving-sys.com/resources/PROD/asset/1073745701/IMAGE/20220610/outlook_GBD-200_300x600_71496720735818185.jpg" alt="error">
+                    
+                </div>
+                <div>
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_3/IMAGE_1654831067.webp?v=20220401_c" alt="error">
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div>
+             <h3>Main Stories</h3>
+             <hr>
+             <p>Magazine</p>
+             <p>NATIONAL</p>
+             <p>INTERNATIONAL</p>
+             <p>BUSINESS</p>
+             <p>OPINIONS</p>
+             <p>BOOK REVIEWS</p>
+             <p>THE NEWS</p>
+             <p>SPORTS</p>
+             <p>ART & ENTERTAINMENT</p>
+
+            </div>
+            <div>
+                <h3>Traveller</h3>
+                <hr>
+                <p>TRAVELOGUES</p>
+                <p>WEEKEND BREAKS</p>
+                <p>HOLIDAYS WITH OT</p>
+                <p>PHOTO FEATURES</p>
+                <p>HOTELS</p>
+                <p>GUIDEBOOKS</p>
+            </div>
+            <div>
+            <h3> Money</h3>
+            <hr>
+            <p>Mutual Funds</p>
+            <p> Insurance</p>
+            <p>Equity</p>
+            <p>Fixed Assets</p>
+            <p>Banking</p>
+            <p>ASK</p>
+            </div>
+            <div>
+                <h3>Business</h3>
+                <hr>
+                <p>THE BIG STORY</p>
+                <p> SPECIALS</p>
+                <p> PERSPECTIVE</p>
+                <p>PIXSTORY</p>
+                <p>ENTERPRISE</p>
+                <p>STRATEGY</p>
+                <p>MARKETS</p>
+                <p> C'EST LA VIE</p>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <hr id="footerhr">
+                <p> Facebook <img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="error"></p>
+            
+                <p> Twitter <img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"> </p>
+                
+                <p> Instagram <img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="error"> </p>
+            
+                <p> Youtube  <img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="error"> </p>
+                
+            </div>
+        </div>
+        
+        <div id="footer1">
+            <div>
+               <a href="https://www.outlookindia.com/about-us">About Us</a>
+               <a href="https://www.outlookindia.com/contact-us">contact Us</a>
+               <a href="https://subscriptions.outlookindia.com/default">Subscribe</a>
+               <a href="https://www.outlookindia.com/privacy-policy">Copyright & Disclaimer</a>
+               <a href="https://christinapalitzsch.tumblr.com/">Osm Awards</a>
+               <a href="https://www.outlookindia.com/compliance.pdf">Compliance</a>
+               <a href="https://poshan.outlookindia.com/">Poshan</a>
+            </div>
+            <div>
+                <p>&copy; 2022 Outlook Digital</p>
+            </div>
+        </div>
+    
+
+
+   
+
+
+
+
+        
+</body>
+
+</html>

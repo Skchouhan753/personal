@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad</title>
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    #ads{
+        width:1200px;
+        height:230px;
+        /* border:1px solid black; */
+        margin:auto;
+        margin-bottom:10px;
+    }
+    #ads img{
+        width:1200px;
+        height:230px;
+        border:1px solid black;
+        margin:auto;
+        margin-bottom:10px;
+    }
+    h1{
+        color:red;
+        font-size:60px;
+        font-weight:bold;
+        text-align:center;
+        margin-bottom:0px;
+        margin-top:0px;
+        font-family:Arial Black;
+    }
+    h1+p{
+        text-align:center;
+        margin-top:0px;
+        font-size:15px;
+    }
+    h4{
+        margin-top: 0px;
+    }
+    /* ********************************* */
+    #navbar>ul li:hover {
+            /* background-color: rgb(230, 228, 228); */
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  */
+            border: 1px solid rgb(212, 209, 209);
+            color: rgb(192, 13, 13);
+        }
+        #navbar {
+            margin: 0px;
+            padding: 0px;
+
+            margin: auto;
+        }
+        #container {
+            margin-top: 30px;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+        #line {
+            background-color: #e00d24;
+            color: #e00d24;
+        }
+        #navbar>ul {
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            position: absolute;
+            margin-left: 90px;
+            list-style-type: none;
+        }
+        #navbar>ul>li {
+            float: left;
+            padding: 5px 7px;
+        }
+        #navbar>ul>li a {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0;
+            color: #515356;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+        #navbar>ul li:hover {
+            background-color: transparent;
+        }
+        #navbar ul ul {
+            display: none;
+        }
+        #outlook {
+            margin-top: -20px;
+        }
+        #outlook>img {
+            height: 40px;
+            width: 15%;
+            /* border: 1px solid; */
+            margin-top: 20px;
+            margin: auto;
+            margin-left: 42%;
+        }
+        #outlook>img+p {
+            margin: auto;
+            text-align: center;
+            color: #515356;
+            font-size: 13px;
+            margin-top: 5px;
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 10px;
+        }
+        #outlook>img+p>span {
+            color: #e00d24;
+            font-weight: bolder;
+        }
+        #tags {
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            margin: auto;
+            /* margin-top: 20px; */
+        }
+        #tags>div>p {
+            font-size: 13px;
+            color: #515356;
+        }
+        #outlook>img+p>a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        #logo {
+            display: flex;
+            width: 10%;
+            justify-content: space-evenly;
+        }
+        #navbar>ul>li>ul li {
+            float: center;
+            padding: 10px;
+            margin: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            /* font-weight: bold; */
+        }
+        #navbar>ul>li:hover>ul {
+            display: block;
+            background: #ccc;
+            position: absolute;
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            width: 100%;
+            /* top:20px; */
+            font-size: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        #navbar>ul>li>ul li {
+            list-style: none;
+            margin-top: 20px;
+            float: left;
+        }
+        #navbar>ul>li>input+img {
+            width: 10px;
+            height: 10px;
+        }
+    /* ************************************ */
+    #ads2{
+        width:100%;
+        height:250px;
+        /* border:1px solid red; */
+        margin:auto;
+        margin-top:30px;
+        /* margin-bottom:10px; */
+        display: flex;
+        justify-content: center;
+        background-color: #EEEEEE;
+         
+    }
+    #ads2 img{
+        border:1px solid black;
+        margin:auto;
+        margin-bottom:400px;
+    }
+    #container{
+        width: 100%;
+        height: 800px;
+        
+        display:grid;
+        background-color: #EEEEEE;
+        justify-content: center;
+        /* border: 1px solid red; */
+        grid-template-columns: repeat(3,500px);
+        grid-template-rows: repeat(1,300px);
+        gap: 5px;
+        margin-top: 110px;
+        margin-left: 5px;
+        grid-template-areas:
+        "a b c";
+    }
+    #container>div:nth-child(1){
+        color:rgb(8, 8, 8);
+        text-align:center;
+        /* border:1px solid red; */
+        grid-area: a;
+        width:500px;
+        height:850px;
+        margin-left:90px;
+        margin-top:-90px;       
+    }
+    #container>div:nth-child(2){
+        color:rgb(8, 8, 8);
+        text-align:center;
+        /* border:1px solid red; */
+        grid-area: b;
+        width:350px;
+        height:700px;
+        margin-left:140px;
+        margin-top:-90px; 
+        text-align:left;   
+    }
+    #container>div:nth-child(3){
+        color:rgb(8, 8, 8);
+        text-align:center;
+        /* border:1px solid red; */
+        grid-area: c;
+        width:350px;
+        height:700px;
+        /* margin-right:10px; */
+        margin-top:-90px;
+        margin-left:55px;
+        text-align:left;
+       
+    }
+    #container>div:nth-child(1) img{
+        width:500px;
+        height:500px;
+    }
+    #container>div:nth-child(1) a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    text-align:left;
+    margin-top:10px;
+    font-size:35px;
+    margin-left: 5px;
+    }
+    #container>div:nth-child(1) a:hover{
+    color:red;
+    }
+    #container>div:nth-child(1) h2{
+        font-size:20px;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 5px;
+
+    }
+    #container>div:nth-child(1) h2+p{
+        text-align: left;
+        margin-left: 5px;
+        margin-top:20px;
+        color:red;
+    }
+    #container>div h1{
+        margin-top:10px;
+        color:black;
+        font-size:18px;
+        text-align:center;
+    }
+    #container>div h1+h1{
+        margin-top:20px;
+        color:rgb(214, 21, 21);
+        font-size:18px;
+        text-align:center;
+    }
+    #container>div:nth-child(2) a{
+        font-size:20px;
+        text-decoration:none;
+        margin-top:20px;
+        margin-bottom:10px;
+        color:black;
+    }
+    #container>div:nth-child(2) img{
+        width:350px;
+
+    }
+    #container>div:nth-child(2) a:hover{
+        color:rgb(204, 11, 11);
+    }
+    #container>div:nth-child(2) p{
+        font-size:18px;
+        text-align:justify;
+        margin-top:25px;
+        margin-bottom:10px; 
+    }
+    #container>div:nth-child(2) p+p{
+        color:red;
+    }
+    #container>div:nth-child(2) img+p{
+    color:red;
+    font-size:12px;
+    margin-top:-8px;
+    }
+    #container>div:nth-child(2) hr+p{
+    color:red;
+    font-size:15px;
+    margin-top:5px;
+    }
+    #container>div:nth-child(3) img+p{
+    color:red;
+    font-size:15px;
+    margin-top:5px;
+    margin-bottom:10px;
+    text-align:left;
+    }
+    #container>div:nth-child(3) p+p{
+        color:red;
+    }
+    #container>div:nth-child(3) img{
+        width:350px;
+    }
+    #container>div:nth-child(3) a{
+        font-size:20px;
+        color:black;
+        text-decoration:none;
+        
+    }
+    #container>div:nth-child(3) a:hover{
+        color:rgb(216, 11, 11);
+    }
+    #container>div:nth-child(3) a+p{
+        font-size:18px;
+        text-align:justify;
+        margin-top:18px;
+        margin-bottom:10px; 
+    }
+    #container>div:nth-child(3) hr+p{
+        font-size:15px;
+        text-align:justify;
+        margin-top:15px;
+        margin-bottom:10px;
+        color:red; 
+    }
+/* ***************box******************** */
+#box{
+    width:100%;
+    height:1600px;
+    /* border: 1px solid red; */
+    /* margin:auto; */
+    display:grid;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(14,233px);
+    gap:20px;
+    grid-template-areas:
+   "a a a b b"
+   "c c c d d"
+   "e e e f f"
+   "g g g h h"
+   "i i i j j"
+   "k k k l l"
+}
+#box>div:nth-child(1){
+    grid-area: a;
+    width:900px;
+    /* border: 1px solid red; */
+    display:flex;
+    /* width:910px; */
+    margin-left:5px;
+    
+}
+#box>div:nth-child(1) div{
+width:500px;
+height:200px;
+
+text-align: justify;
+/* border: 1px solid red; */
+}
+#box>div:nth-child(1) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(1)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(1)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 20px;
+
+}
+#box>div:nth-child(1) a:hover{
+color:rgb(204, 15, 15);
+}
+#box>div:nth-child(1)>div p{
+color:red;
+margin-left:20px;
+margin-top:10px;
+}
+
+
+
+
+#box>div:nth-child(2){
+    grid-area: b;
+    /* border: 1px solid red; */
+    display:flex;
+    width:400px;
+    height:350px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#box>div:nth-child(2)>div img{
+width:400px;
+height:250px;
+}
+#box>div:nth-child(2)>div h1{
+font-size:20px;
+color:grey;
+text-align:left;
+}
+#box>div:nth-child(2)>div a{
+font-size:20px;
+text-align:left;
+color:black;
+text-decoration: none;
+}
+#box>div:nth-child(2)>div a:hover{
+color:grey;
+}
+
+
+
+#box>div:nth-child(3){
+    grid-area: c;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(3) div{
+    width:500px;
+    height:210px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(3) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(3)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(3)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(3) a:hover{
+color:rgb(193, 18, 18);
+}
+#box>div:nth-child(3)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+
+
+#box>div:nth-child(4){
+    grid-area: d;
+    /* border: 1px solid red; */
+    display:flex;
+    width:400px;
+    
+}
+#box>div:nth-child(5){
+    grid-area: e;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(5) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(5)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(5)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(5) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(5) a:hover{
+color:rgb(214, 10, 10);
+}
+#box>div:nth-child(5)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+
+
+#box>div:nth-child(6){
+    grid-area: f;
+    /* border: 1px solid red; */
+    display:flex;
+    width:520px;
+    height:170px;
+    margin-top:-100px;
+    /* background-color: #EEEEEE; */
+    margin-left:-70px;
+    margin-right: 50px;;
+}
+#box>div:nth-child(6) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(6) h3{
+text-align:center;
+margin-bottom:-20px;
+}
+#box>div:nth-child(6) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color: black;
+}
+#box>div:nth-child(6) a:hover{
+color:red;
+}
+
+
+#box>div:nth-child(7){
+    grid-area: g;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(7) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(7)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(7)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(7) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(7) a:hover{
+color:rgb(183, 15, 15);
+}
+#box>div:nth-child(7)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+#box>div:nth-child(8){
+    grid-area: h;
+    /* border: 1px solid red; */
+    display:flex;
+    width:520px;
+    height:170px;
+    margin-top:-170px;
+    margin-left: -70px;
+    
+}
+#box>div:nth-child(8) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(8) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color: black;
+}
+#box>div:nth-child(8) a:hover{
+color:red;
+}
+
+#box>div:nth-child(9){
+    grid-area: i;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+    
+}
+#box>div:nth-child(9) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(9)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(9)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(9) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(9) a:hover{
+color:rgb(194, 28, 28);
+}
+#box>div:nth-child(9)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+
+#box>div:nth-child(10){
+    grid-area: j;
+    /* border: 1px solid red; */
+    display:flex;
+    width:520px;
+    height:170px;
+    margin-top:-235px;
+    margin-left: -70px;
+}
+#box>div:nth-child(10) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(10) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color: black;
+}
+#box>div:nth-child(10) a:hover{
+color:red;
+}
+
+#box>div:nth-child(11){
+    grid-area: k;
+    /* border: 1px solid red; */
+    display:flex;
+    width:900px;
+    margin-left:5px;
+}
+#box>div:nth-child(11) div{
+    width:500px;
+    height:200px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+#box>div:nth-child(11)>div h3{
+margin-left:10px;
+}
+#box>div:nth-child(11)>div a{
+text-decoration: none;
+color:black;
+font-size:20px;
+margin-left: 10px;
+}
+#box>div:nth-child(11) img{
+    width:300px;
+    height:200px;
+    margin-left:10px;
+}
+#box>div:nth-child(11) a:hover{
+color:rgb(190, 16, 16);
+}
+#box>div:nth-child(11)>div p{
+color:red;
+margin-left:10px;
+margin-top:10px;
+}
+
+#box>div:nth-child(12){
+    grid-area: l;
+    width:520px;
+    height:170px;
+    margin-top:-285px;
+    margin-left: -70px;
+    display:flex;
+}
+#box>div:nth-child(12) img{
+    width:220px;
+    height:150px;
+    padding:10px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#box>div:nth-child(12) a{
+text-decoration: none;
+margin-top: 20px;
+font-size:20px;
+color:black
+}
+#box>div:nth-child(12) a:hover{
+color:red;
+}
+
+
+
+
+#footer{
+    width:100%;
+    height:500px;
+    background-color: rgb(36, 36, 36);
+    margin-top: 20px;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,250px);
+    grid-template-rows: repeat(2,233px);
+    gap:30px;
+    grid-template-areas:
+   "a b c d e"
+   "f f f f f"
+}
+#footer>div>ul>li a:hover{
+    color:red;
+}
+#footer>div hr{
+    color:white;
+
+margin-left: 0px;
+}
+#footer>div:nth-child(1){
+    grid-area: a;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    height:400px; 
+    margin-left: 15px;  
+}
+#footer>div:nth-child(1) p{
+color:white;
+font-size:15px;
+margin-left: 5px;
+
+}
+#footer>div:nth-child(1)>ul a{
+text-decoration: none;
+color:white;
+font-size: 13px;
+}
+#footer>div:nth-child(1)>ul li{
+list-style: none;
+padding:6px;
+}
+
+#footer>div:nth-child(2){
+    grid-area: b;
+    /* border: 1px solid red; */
+    margin-top: 40px;  
+    height:400px;  
+}
+
+#footer>div:nth-child(2) p{
+color:white;
+font-size:15px;
+margin-left: 5px;
+
+}
+#footer>div:nth-child(2)>ul a{
+text-decoration: none;
+color:white;
+font-size: 13px;
+}
+#footer>div:nth-child(2)>ul li{
+list-style: none;
+padding:6px;
+}
+
+#footer>div:nth-child(3){
+    grid-area: c;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    height:400px;
+}
+
+#footer>div:nth-child(3) p{
+color:white;
+font-size:15px;
+margin-left: 5px;
+
+}
+#footer>div:nth-child(3)>ul a{
+text-decoration: none;
+color:white;
+font-size: 13px;
+}
+#footer>div:nth-child(3)>ul li{
+list-style: none;
+padding:6px;
+}
+
+
+
+
+#footer>div:nth-child(4){
+    grid-area: d;
+    /* border: 1px solid red; */
+    margin-top: 40px; 
+    height:400px;
+}
+
+#footer>div:nth-child(4) p{
+color:white;
+font-size:15px;
+margin-left: 5px;
+
+
+}
+#footer>div:nth-child(4)>ul a{
+text-decoration: none;
+color:white;
+font-size: 13px;
+}
+#footer>div:nth-child(4)>ul li{
+list-style: none;
+padding:6px;
+}
+
+
+#footer>div:nth-child(5){
+    grid-area: e;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    height:400px;  
+}
+#footer>div:nth-child(5) p{
+color:white;
+font-size:15px;
+margin-left: 5px;
+
+}
+#footer>div:nth-child(5)>ul a{
+text-decoration: none;
+color:white;
+font-size: 13px;
+}
+#footer>div:nth-child(5)>ul li{
+list-style: none;
+padding:6px;
+}
+#footer>div:nth-child(5)>ul>li img{
+margin-left:10px;
+margin-top: 10px;
+}
+
+
+
+#footer>div:nth-child(6){
+    grid-area: f;
+    background-color: rgb(7, 7, 4);
+    margin-top: 130px;
+    height:30px;
+    color:#EEEEEE; 
+    padding:17px; 
+    width:1330px;
+}
+#footer>div:nth-child(6) p{
+color:white;
+font-size:15px;
+margin-left: 5px;
+margin-top: 10px;
+
+}
+#footer>div:nth-child(6)>ul a{
+text-decoration: none;
+color:white;
+font-size: 13px;
+
+}
+#footer>div:nth-child(6)>ul li{
+list-style: none;
+padding:6px;
+}
+#footer>div:nth-child(6) a{
+text-decoration: none;
+padding:10px;
+color:white;
+font-size: 13px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="ads"><img src="https://tpc.googlesyndication.com/simgad/3674935640259450259"></div>
+    <div id="tags">
+        <div>
+            <p> Friday, Jun 17, 2022
+            </p>
+        </div>
+        <div id="logo">
+            <a href="https://www.facebook.com/Outlookindia"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a>
+            <a href="https://www.instagram.com/outlookindia/"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+        </div>
+        <div id="outlook">
+            <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="outlook">
+            <p><a href="login.html">LOGIN</a> <span>|</span>
+                <a href="signup.html">SUBSCRIBE</a></p>
+        </div>
+    <nav id="navbar">
+        <ul>
+            <li type="none"><a href="index.html">HOME</a></li>
+            <li type="none"><a>OUTLOOK</a>
+                <ul>
+                    <li><a href="mazagine.html">Magazine</a></li>
+                    <li><a href="indiaNews.html">India News</a></li>
+                    <li><a href="international.html">International News</a></li>
+                    <li><a href="Culture.html">Culture</a></li>
+                    <li><a href="studyAbroad.html">Study Abroad</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a>BUSINESS</a>
+
+                <ul>
+                    <li><a href="S-Magazine.html">Magazine</a></li>
+                    <li><a href="S-Headline.html">Headlines</a></li>
+                    <li><a href="R-BigStory.html">Big Story</a></li>
+                    <li><a href="R-Enterprise.html">Enterprise</a></li>
+                    <li><a href="R-Strategy.html">Strategy</a></li>
+                    <li><a href="R-Startups.html">Startups</a></li>
+                    <li><a href="R-Perspective1.html">Prespective</a></li>
+                    <li><a href="S-PixStory.html">Pixstory</a></li>
+                    <li><a href="S-Videos.html">Videos</a></li>
+                    <li><a href="S-Women.html">Women</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="OutlookMoney.html">MONEY</a></li>
+            <li type="none"><a href="crypto.html">CRYPTO CORNER</a></li>
+            <li type="none"><a>TRAVEL</a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">See</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="">Responsible</a></li>
+                    <li><a href="">Tourism</a></li>
+                    <li><a href="">OT</a></li>
+                    <li><a href="">Quiz</a></li>
+                    <li><a href="">Guide</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="sports.html">SPORTS</a></li>
+            <li type="none"><a href="videos.html">VIDEOS</a></li>
+            <li type="none"><a href="art.html">ENTERTAINMENT</a></li>
+            <li type="none"><a href="photos.html">PHOTOS</a></li>
+
+            <li type="none"><a href="mazagine.html">MAZAGINE</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="latestIssue.html">Latest Issue</a></li>
+
+                    <li><a href="indiaNews.html">India</a></li>
+                    <li><a href="international.html">World</a></li>
+                    <li><a href="business.html">Bussiness</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="sports.html">sports</a></li>
+                    <li><a href="international.html">The News</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="art.html">Art & Entertainment</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+
+                </ul>
+            </li>
+            <li type="none"><a href="hindi">HINDI</a></li>
+            <li type="none"><a href="poshan.html">POSHAN</a></li>
+
+            <li type="none"><a href="others">OTHERS</a>
+                <ul>
+                    <li><a href="poshan.html">Poshan</a></li>
+                    <li><a href="">Planet</a></li>
+                    <li><a href="">Outlook</a></li>
+                    <li><a href="">Sportlight</a></li>
+                    <li><a href="">Krishi</a></li>
+                </ul>
+            </li>
+            <li><input id="search" type="search"><img id="img_search"
+                    src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+            </li>
+        </ul>
+    </nav><br><br>
+    <hr>
+<div id="container">
+
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655372693.webp" alt=""><br>
+    <a href="https://www.outlookindia.com/business-spotlight/gurinder-singh-bhatti-saving-youngsters-from-fraudsters-luring-them-with-marriages-for-settling-overseas-news-202746">Gurinder Singh Bhatti, Saving Youngsters From Fraudsters Luring Them With Marriages For Settling Overseas</a>
+   
+    <h2>Gurinder Singh Bhatti, saving youngsters from fraudsters luring them with marriages for settling overseas. Bhatti has gone out of his way to ensure to get the money back from the frauds and hand it over to the families. These families did not have enough...</h2>
+    <p>16 June 2022</p>
+</div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655191949.webp" alt="">
+    <a href="https://www.outlookindia.com/national/how-education-agents-mislead-medical-students-and-thwart-nmc-s-efforts-to-stop-them-from-going-abroad-news-202195">How Education Agents Mislead Medical Students And Thwart NMC’s Efforts To Stop Them From Going Abroad</a>
+    <p>Many Russian colleges, that admit students through entrance tests, have started receiving applications from Indian students and they will start offering...</p>
+    <p>14 June 2022</p>
+    <hr>
+    <a href="https://www.outlookindia.com/outlook-spotlight/with-adept-consultation-in-the-canadian-immigration-industry-sahil-sayal-helps-young-minds-come-close-to-their-dreams-news-201135">With Adept Consultation In The Canadian Immigration Industry, Sahil Sayal Helps Young Minds Come Close To Their Dreams</a>
+    <p>Sayal Immigration Inc. is a Regulated Canadian Immigration Consulting Company based in Canada. Sahil Sayal has built expertise to save its clients from the...</p>
+</div>
+<div>
+        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1654588467.webp">
+        
+        <a href="https://www.outlookindia.com/business-spotlight/overseas-education-consultant-yashi-shukla-is-making-financial-aid-more-accessible-news-200824">Overseas Education Consultant Yashi Shukla Is Making Financial Aid More Accessible</a>
+        <p>Over the past 16 years, Yashi has been behind the admission success stories of many students. She contributed to their admissions to universities in the USA,...</p>
+        <p>07 June 2022</p>    
+        <hr>
+        
+        <a href="">Supreme Court Ruling Casts Shadow Over Indian MBBS Students’ Study Abroad Ambitions</a>
+        <p>By upholding National Medical Commission regulations, the Supreme Court has greenlit norms that make it impossible for Indian students to practice in India...</p>
+        
+    </div>
+
+
+
+</div>
+
+   <div id="ads2"><img src="https://tpc.googlesyndication.com/simgad/3205750195975070196" alt=""></div>
+<div id="box">
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1647780997.webp" alt="">
+            
+        <div>
+            <a href="https://www.outlookindia.com/business/sbi-launches-15-year-student-term-loans-know-all-the-details-here-news-198344">SBI Launches 15-Year Student Term Loans; Know All The Details Here</a><br><br>
+            <h3>The SBI loan does not need a collateral for amounts up to Rs 7.5 lakh and offers a 0.5 per cent concession in the interest rate to girl students. Read on to...</h3>
+        </div>
+
+    </div>
+<div>
+    <div>
+        <h3>ADVERTISEMENT</h3><br>
+       <img src="https://secure-ds.serving-sys.com/resources/PROD/asset/1073745701/IMAGE/20220610/outlook_GBD-200_300x250_71496720468432328.jpg" alt="">
+    </div>
+    
+</div>
+
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1652279089.webp" alt="">
+        <div>
+            <a href="https://www.outlookindia.com/business/how-a-depreciating-rupee-impacts-finances-in-terms-of-investing-and-studying-abroad-news-196181">How A Depreciating Rupee Impacts Finances In Terms Of Investing And Studying Abroad</a><br><br>
+            <h3>As the rupee falls against the dollar, there are definite impact to be seen on investments and overseas education. Here’s how to go about both
+
+            </h3>
+        </div>
+    </div>
+
+<div>
+    
+
+</div>
+
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1651656515.webp" alt="">
+        <div>
+            
+            <a href="https://www.outlookindia.com/national/study-abroad-china-a-land-of-educational-opportunity-awaiting-exploration-news-195979">Indian Students Love China For Higher Studies Despite Border Dispute</a><br><br>
+            <h3>The universities offer scholarships for students pursuing higher studies in medicine, engineering, business studies, etc. Also, the cost of living in some...
+
+            </h3>
+        </div>
+
+    </div>
+<div>
+    
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655191949.webp" alt="">
+    <a href="https://www.outlookindia.com/national/nmc-considers-relief-for-indian-medical-students-from-ukraine-china-news-202830">NMC Considers Relief For Indian Medical Students From...</a>
+</div>
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1651228786.webp" alt="">
+        <div>
+            
+            <a href="https://www.outlookindia.com/national/amid-unceasing-war-in-ukraine-bangladesh-emerges-as-top-option-for-j-k-medical-students-news-193977">Amid Unceasing War In Ukraine, Bangladesh Emerges As Top Option For J&K Medical Students</a><br><br>
+            <h3>According to the academic consultants in the valley, having returned from war-torn Ukraine, Kashmiri medical students are showing interest in continuing their...
+
+            </h3>
+        </div>
+    </div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655383028.webp" alt="">
+    <a href="https://www.outlookindia.com/sports/cricket-live-score/1st-odi-australia-vs-sri-lanka/53765">Shivin Narang On His Latest Music vVideo 'Ijazzat Hai' With...</a>
+</div>
+    <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1650977263.webp" alt="">
+        <div>
+            <a href="https://www.outlookindia.com/national/nitin-gadkari-bats-for-indian-students-in-philippines-asks-nmc-to-examine-issue-news-193162">Nitin Gadkari Bats For Indian Students In Philippines, Asks NMC To Examine Issue</a><br><br>
+            <h3>Over 10,000 students studying undergraduate medical courses in the Philippines are staring at an uncertain future after the Indian medical education regulator...</h3>
+        </div>
+    </div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655364197.webp" alt="">
+    <a href="https://www.outlookindia.com/sports/live-streaming-of-west-indies-vs-bangladesh-1st-test-watch-wi-vs-ban-cricket-match-live-news-202695">Live Streaming Of West Indies Vs Bangladesh, 1st Test: Watch WI Vs BAN Cricket Match Live</a>
+</div>
+    <div>
+
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_3/IMAGE_1650104937.webp" alt="">
+        <div>
+            
+            <a href="https://www.outlookindia.com/business/5-ways-to-make-the-education-loan-process-easier-to-study-abroad-news-191825">5 Ways To Make The Education Loan Process Easier To Study Abroad</a><br><br>
+            <h3>A good credit score, reputed institute and accurate documentation are some of the factors that can make the education loan process smoother to study abroad</h3>
+        </div>
+    </div>
+<div>
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655406984.webp" alt="">
+    <a href="https://www.outlookindia.com/sports/cricket-live-score/1st-test-bangladesh-vs-west-indies/54151">SL Beat Australia To Level ODI Series</a>
+
+</div>
+
+</div>
+<hr>
+<div id="footer">
+
+    <div>
+    <p>Main Story</p>
+    <hr>
+    <ul>
+       
+        <li><a href="https://www.outlookindia.com/magazine">Main Stories</a></li>
+        <li><a href="https://www.outlookindia.com/national">NATIONAL</a></li>
+        <li><a href="https://www.outlookindia.com/international">INTERNATIONAL</a></li>
+        <li><a href="https://www.outlookindia.com/business">BUSINESS</a></li>
+        <li><a href="https://www.outlookindia.com/magazine/opinion">OPINIONS</a></li>
+        <li><a href="https://www.outlookindia.com/books">BOOK REVIEWS</a></li>
+        <li><a href="https://www.outlookindia.com/the-news">THE NEWS</a></li>
+        <li><a href="https://www.outlookindia.com/sports">SPORTS</a></li>
+        <li><a href="https://www.outlookindia.com/art-entertainment">ART & ENTERTAINMENT</a></li>
+
+    </ul>
+   
+
+    </div>
+    <div>
+        <p>Traveller</p>
+        <hr>
+        <ul>
+       
+            <li><a href="https://www.outlookindia.com/outlooktraveller/">TRAVELOGUES</a></li>
+            <li><a href="https://www.outlookindia.com/outlooktraveller/">WEEKEND BREAKS</a></li>
+            <li><a href="https://www.outlookindia.com/outlooktraveller/destinations/">HOLIDAYS WITH OT</a></li>
+            <li><a href="https://www.outlookindia.com/outlooktraveller/destinations/photo-features/">PHOTO FEATURES</a></li>
+            <li><a href="https://www.outlookindia.com/outlooktraveller/hotels/">HOTELS</a></li>
+            <li><a href="http://www.books.outlookindia.com/">GUIDEBOOKS</a></li>
+            
+    
+        </ul>
+    
+    </div>
+    <div>
+        <p>Money</p>
+        <hr>
+        <ul>
+       
+            <li><a href="https://www.outlookindia.com/outlookmoney/mutual-funds">Mutual Funds</a></li>
+            <li><a href="https://www.outlookindia.com/outlookmoney/insurance"> Insurance</a></li>
+            <li><a href="https://www.outlookindia.com/outlookmoney/equity">IEquity</a></li>
+            <li><a href="https://www.outlookindia.com/outlookmoney/fixed-assets">Fixed Assets</a></li>
+            <li><a href="https://www.outlookindia.com/outlookmoney/banking">Banking</a></li>
+            <li><a href="https://www.outlookindia.com/outlookmoney/asks">ASK</a></li>
+            
+    
+        </ul>
+     
+    </div>
+    <div>
+        <p>Business</p>
+        <hr>
+        <ul>
+       
+            <li><a href="https://www.outlookbusiness.com/the-big-story/">THE BIG STORY</a></li>
+            <li><a href="https://www.outlookbusiness.com/specials/">SPECIALS</a></li>
+            <li><a href="https://www.outlookbusiness.com/perspective/">PERSPECTIVE</a></li>
+            <li><a href="https://www.outlookbusiness.com/pixtory/">PIXSTORY</a></li>
+            <li><a href="https://www.outlookbusiness.com/enterprise/">ENTERPRISE</a></li>
+            <li><a href="https://www.outlookbusiness.com/strategy/">STRATEGY</a></li>
+            <li><a href="https://www.outlookbusiness.com/markets/">MARKETS</a></li>
+            <li><a href="https://www.outlookbusiness.com/cest-la-vie/">C'EST LA VIE</a></li>
+    
+        </ul>
+    
+    </div>
+    <div> 
+        <p>Social Media</p> 
+        <hr>
+        <ul>
+            <li><a href="https://www.facebook.com/Outlookindia">Facebook</a><img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="error"></li>
+            <li><a href="https://twitter.com/outlookindia/">Twitter</a><img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></li>
+            <li><a href="https://www.instagram.com/outlookindia">Instagram</a><img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="error"></li>
+            <li><a href="https://www.youtube.com/user/OutlookMagazine">Youtube</a><img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="error"></li>
+        </ul>
+      
+    </div>
+    <div>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="">Subscribe</a>
+        <a href="">Copyright & Disclaimer</a>
+        <a href="">Osm Awards</a>
+        <a href="">Compliance</a>
+        <a href="">Poshan</a>
+    </div>
+</div>
+</body>
+</html>

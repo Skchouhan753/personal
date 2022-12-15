@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #banner {
+            width: 87%;
+            /* border: 1px solid red; */
+            height: 260px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            background-color: #fbfbfb;
+        }
+
+        #banner>div>img {
+            border: 1px black;
+        }
+        
+         #navbar {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            
+            justify-content: space-between;
+            margin: auto;
+        }
+        #navbar>div{
+            /* display: flex; */
+            width: 15%;
+            /* border: 1px solid teal; */
+            /* justify-content: center;
+            align-items: center; */
+            
+
+          
+        }
+        #navbar>div>img{
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            padding-bottom: 10px;
+        }
+        p{
+            margin-left: 110px;
+        }
+        img+a{
+           margin-left: 40px;
+           font-size: 15px;
+           color: grey;
+           text-decoration: none;
+           
+        }
+        a+a{
+            font-size: 15px;
+            color: rgb(42, 28, 28);
+            text-decoration: none;
+        }
+        #headhr{
+            color:red;
+            margin-top: -90px;
+            width: 100%;
+            
+        }
+        #form1{
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid red; */
+        }
+        #form1>h1{
+            text-align: center;
+            margin-top: 100px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 30px;
+        }
+        form{
+            width: 40%;
+        
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 8px;
+
+        }
+        #email,#password,#name,#number{
+            display: block;
+            width: 100%;
+            padding: 22px;
+            margin-top: 27px;
+            
+            
+        }
+        button{
+            width: 100%;
+            padding: 22px;
+            font-family: Arial;
+            margin-top: 33px;
+            background-color: #000000;
+            color: white;
+        }
+        button:hover{
+            background-color: #e3201b;
+        }
+        #form1>p{
+            text-align: center;
+            margin-left: -8px;
+            margin-top: 15px;
+            
+        }
+        #form1>p:hover{
+            color: #e3201b; ;
+        }
+        #footer{
+        width: 100%;
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        /* border: 1px solid red; */
+        background-color:#212020;
+        color: white;
+        margin-top: 15px;
+    }
+   #footer>div{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 40px;
+    
+   }
+   #footer>div>p{
+    text-align: left;
+    margin-top: 9px;
+    font-size: 13px;
+    /* margin-left: -0px; */
+    margin-left: 40px;
+    font-family:"Open Sans", sans-serif;
+    
+   }
+   #footer>div>p:hover{
+        color:#bc081e;
+   }
+
+   
+   #footer>div>h3{
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 13px;
+    font-family:"Open Sans", sans-serif;
+   }
+   /* hr{
+    width: 60%;
+    
+    margin-left: 40px;
+    font-weight: 0px;
+   } */
+   #footer>div>p>img{
+       margin-top: 5px;
+       margin-left: 15px;
+   }
+   #footer1{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    background-color:#181818 ;
+    color:rgb(162, 156, 156) ;
+   }
+  #footer1>div:nth-child(1)>a{
+    color:rgb(162, 156, 156) ;
+    margin-left: 10px;
+    
+  }
+  #navbar>ul a:hover {
+            /* background-color: rgb(230, 228, 228); */
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  */
+            border: 1px solid rgb(212, 209, 209);
+            color: rgb(192, 13, 13);
+
+        }
+
+        #navbar {
+            margin: 0px;
+            padding: 0px;
+
+            margin: auto;
+
+        }
+
+        #navbar>ul {
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            position: absolute;
+            margin-left: 20px;
+            list-style-type:none;
+
+
+
+        }
+
+        #navbar>ul>li {
+            float: left;
+            padding: 5px 7px;
+
+        }
+
+        #navbar>ul>li a {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0;
+            color: #515356;
+
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+
+
+
+
+        }
+
+        #navbar>ul li:hover {
+            background-color: transparent;
+        }
+
+        #navbar ul ul {
+            display: none;
+
+
+        }
+
+        #navbar>ul>li>ul li {
+            float: center;
+            padding: 10px;
+            margin: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+
+            /* font-weight: bold; */
+
+
+        }
+
+        #navbar>ul>li:hover>ul {
+            display: block;
+            background: #ccc;
+            position: absolute;
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            width: 100%;
+            /* top:20px; */
+            font-size: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        #navbar>ul>li>ul li {
+            list-style: none;
+            margin-top: 20px;
+            float: left;
+
+        }
+
+        #navbar>ul>li>input+img {
+            width: 10px;
+            height: 10px;
+        }
+
+        #container {
+            margin-top: 30px;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div> <img
+                src="https://tpc.googlesyndication.com/simgad/3674935640259450259"
+                alt="error"></div>
+
+    </div>
+    <div id="navbar">
+        
+            <p>Tuesday,Jun 14,2022</p>
+            <div>
+                <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="error">
+                 <a href="">Signup</a> | 
+                 <a href="">SUBSCRIBE</a>
+            </div>
+            
+        
+        <div id="rightsite">
+            <a href="https://www.facebook.com/Outlookindia" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="error"></a> 
+
+            <a href="https://twitter.com/outlookindia/" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a> 
+
+            <a href="http://www.instagram.com/outlookindia" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="error"></a> 
+
+            <a href="https://www.youtube.com/user/OutlookMagazine" target="_blank" class="facebook"><img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="error"></a> 
+        </div>
+    </div>
+
+      <!-- append html -->
+      <div id="container">
+        <div id="navbar">
+            <ul>
+                <li type="none"><a href="home">HOME</a></li>
+                <li type="none"><a href="outlook">OUTLOOK</a>
+                    <ul id="x">
+                        <li><a href="">Magazine</a></li>
+                        <li><a href="">India News</a></li>
+                        <li><a href="">International News</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Study Abroad</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="businees">BUSINESS</a>
+
+                    <ul>
+                        <li><a href="">Magazine</a></li>
+                        <li><a href="">Headlines</a></li>
+                        <li><a href="">Big Story</a></li>
+                        <li><a href="">Enterprise</a></li>
+                        <li><a href="">Strategy</a></li>
+                        <li><a href="">Startups</a></li>
+                        <li><a href="">Prespective</a></li>
+                        <li><a href="">Pixstory</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Women</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="money">MONEY</a></li>
+                <li type="none"><a href="crypto corner">CRYPTO CORNER</a></li>
+                <li type="none"><a href="travel">TRAVEL</a>
+
+                    <ul id="innerMenu3">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">See</a></li>
+                        <li><a href="">Experience</a></li>
+                        <li><a href="">Travel</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Responsible</a></li>
+                        <li><a href="">Tourism</a></li>
+                        <li><a href="">OT</a></li>
+                        <li><a href="">Quiz</a></li>
+                        <li><a href="">Guide</a></li>
+                        <li><a href="">Books</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="sports">SPORTS</a></li>
+                <li type="none"><a href="videos">VIDEOS</a></li>
+                <!-- <li type="none"><a href="entertainment">ENTERTAINMENT</a></li>  -->
+                <li type="none"><a href="photos">PHOTOS</a></li>
+
+                <li type="none"><a href="mazagine">MAZAGINE</a>
+                    <ul id="innerMenu4">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Latest</a></li>
+                        <li><a href="">Issue</a></li>
+                        <li><a href="">India</a></li>
+                        <li><a href="">World</a></li>
+                        <li><a href="">Bussiness</a></li>
+                        <li><a href="">Boks</a></li>
+                        <li><a href="">sports</a></li>
+                        <li><a href="">The News</a></li>
+                        <li><a href="">Opinion</a></li>
+                        <li><a href="">Art & Entertainment</a></li>
+                        <li><a href="">Archives</a></li>
+
+                    </ul>
+                </li>
+                <li type="none"><a href="hindi">HINDI</a></li>
+                <li type="none"><a href="poshan">POSHAN</a></li>
+
+                <li type="none"><a href="otrhers">OTHERS</a>
+                    <ul id="innerMenu5">
+                        <li><a href="">Poshan</a></li>
+                        <li><a href="">Planet</a></li>
+                        <li><a href="">Outlook</a></li>
+                        <li><a href="">Sportlight</a></li>
+                        <li><a href="">Krishi</a></li>
+                    </ul>
+                </li>
+                <li><input id="search" type="search"><img id="img_search"
+                        src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <!-- <hr id="line"> -->
+    <hr id="headhr">
+
+       <div id="form1">
+            <h1>SIGN UP TO OUTLOOK</h1>
+
+            <form>
+                 <input type="text" placeholder="Enter Your Name" id="name">
+                 <input type="text" placeholder="Enter Your Email" id="email">
+                 <input type="password" placeholder="Password" id="password">
+                 <input type="number" placeholder="Mobile Number" id="number">
+
+                 <button type="submit">SIGN UP</button>
+                </form>
+                <p> <a href="login.html"></a> Login</p>
+       </div>
+       <div id="footer">
+        <div>
+         <h3>Main Stories</h3>
+         <hr>
+         <p>Magazine</p>
+         <p>NATIONAL</p>
+         <p>INTERNATIONAL</p>
+         <p>BUSINESS</p>
+         <p>OPINIONS</p>
+         <p>BOOK REVIEWS</p>
+         <p>THE NEWS</p>
+         <p>SPORTS</p>
+         <p>ART & ENTERTAINMENT</p>
+
+        </div>
+        <div>
+            <h3>Traveller</h3>
+            <hr>
+            <p>TRAVELOGUES</p>
+            <p>WEEKEND BREAKS</p>
+            <p>HOLIDAYS WITH OT</p>
+            <p>PHOTO FEATURES</p>
+            <p>HOTELS</p>
+            <p>GUIDEBOOKS</p>
+        </div>
+        <div>
+        <h3> Money</h3>
+        <hr>
+        <p>Mutual Funds</p>
+        <p> Insurance</p>
+        <p>Equity</p>
+        <p>Fixed Assets</p>
+        <p>Banking</p>
+        <p>ASK</p>
+        </div>
+        <div>
+            <h3>Business</h3>
+            <hr>
+            <p>THE BIG STORY</p>
+            <p> SPECIALS</p>
+            <p> PERSPECTIVE</p>
+            <p>PIXSTORY</p>
+            <p>ENTERPRISE</p>
+            <p>STRATEGY</p>
+            <p>MARKETS</p>
+            <p> C'EST LA VIE</p>
+        </div>
+        <div>
+            <h3>Social Media</h3>
+            <hr>
+            <p> Facebook <img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="error"></p>
+        
+            <p> Twitter <img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"> </p>
+            
+            <p> Instagram <img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="error"> </p>
+        
+            <p> Youtube  <img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="error"> </p>
+            
+        </div>
+    </div>
+    
+    <div id="footer1">
+        <div>
+           <a href="https://www.outlookindia.com/about-us">About Us</a>
+           <a href="https://www.outlookindia.com/contact-us">contact Us</a>
+           <a href="https://subscriptions.outlookindia.com/default">Subscribe</a>
+           <a href="https://www.outlookindia.com/privacy-policy">Copyright & Disclaimer</a>
+           <a href="https://christinapalitzsch.tumblr.com/">Osm Awards</a>
+           <a href="https://www.outlookindia.com/compliance.pdf">Compliance</a>
+           <a href="https://poshan.outlookindia.com/">Poshan</a>
+        </div>
+        <div>
+            <p>&copy; 2022 Outlook Digital</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    let dataArry=JSON.parse(localStorage.getItem("signupdata")) || []
+           let form= document.querySelector("form")
+
+           form.addEventListener("submit",function(){
+               event.preventDefault()
+                
+               let data={
+                name:form.name.value,
+                email:form.email.value,
+                password:form.password.value,
+                number:form.number.value
+               }
+               if(checksignup(data.email)===true){
+                 
+                  dataArry.push(data)
+                  localStorage.setItem("signupdata",JSON.stringify(dataArry))
+                  alert ("signup succssful")
+                   window.location.href="login.html"
+               }else{
+                 alert ("Account allredy exist")
+               }
+           })
+
+           function checksignup(email){
+            let filter=dataArry.filter(function(ele){
+                   return email===ele.email
+              })
+
+              if(filter.length>0){
+                return false
+              }else{
+                return true
+              }
+           }
+
+
+</script>

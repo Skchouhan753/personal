@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture News</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        #ads {
+            width: 1200px;
+            height: 250px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        #ads img {
+            width: 100%;
+            /* height: 220px; */
+            margin: auto;
+            margin-bottom: -10px;
+        }
+        
+        #navbar>ul a:hover {
+            border: 1px solid rgb(212, 209, 209);
+            color: rgb(192, 13, 13);
+        }
+        
+        #navbar {
+            margin: 0px;
+            padding: 0px;
+            margin: auto;
+        }
+        
+        #navbar>ul {
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            position: absolute;
+            margin-left: 20px;
+        }
+        
+        #navbar>ul>li {
+            float: left;
+            padding: 5px 7px;
+        }
+        
+        #navbar>ul>li a {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0;
+            color: #515356;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+        
+        #navbar>ul li:hover {
+            background-color: transparent;
+        }
+        
+        #navbar ul ul {
+            display: none;
+        }
+        
+        #navbar>ul>li>ul li {
+            float: center;
+            padding: 10px;
+            margin: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+        }
+        
+        #navbar>ul>li:hover>ul {
+            display: block;
+            background: #ccc;
+            position: absolute;
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            width: 100%;
+            /* top:20px; */
+            font-size: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        
+        #navbar>ul>li>ul li {
+            list-style: none;
+            margin-top: 20px;
+            float: left;
+        }
+        
+        #navbar>ul>li>input+img {
+            width: 10px;
+            height: 10px;
+        }
+        
+        #container1 {
+            margin-top: 30px;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        #outlook {
+            margin-top: -20px;
+        }
+        
+        #outlook>img {
+            height: 40px;
+            width: 15%;
+            /* border: 1px solid; */
+            margin-top: 20px;
+            margin: auto;
+            margin-left: 42%;
+        }
+        
+        #outlook>img+p {
+            margin: auto;
+            text-align: center;
+            color: #515356;
+            font-size: 13px;
+            margin-top: 5px;
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        #outlook>img+p>span {
+            color: #e00d24;
+            font-weight: bolder;
+        }
+        
+        #tags {
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            margin: auto;
+            /* margin-top: 20px; */
+        }
+        
+        #logo {
+            display: flex;
+            width: 10%;
+            justify-content: space-evenly;
+        }
+        
+        #tags>div>p {
+            font-size: 13px;
+            color: #515356;
+        }
+        
+        #search {
+            border: 0px;
+            width: 30%;
+        }
+        
+        #line {
+            background-color: #e00d24;
+            color: #e00d24;
+        }
+        
+        #container {
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid; */
+            display: flex;
+            margin: auto;
+        }
+        
+        #end>p {
+            color: #5e5e69;
+            font-size: 10px;
+        }
+        
+        #container>div {
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+        
+        #container>div>h1 {
+            font-family: Bodoni MT;
+        }
+        
+        #container>div>h1+p {
+            font-family: "Open Sans", sans-serif;
+        }
+        
+        #container>div:nth-child(1) {
+            margin-right: 40px;
+            margin-left: 20px;
+        }
+        
+        #second {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px, 280px, 200px, 180px;
+            /* border: 1px solid teal; */
+            gap: 20px;
+            justify-content: space-between;
+            grid-template-areas: "a b" "c d";
+        }
+        
+        #second>div {
+            /* border: 1px solid; */
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+        
+        #second>div:nth-child(1) {
+            grid-area: a;
+        }
+        
+        #second>div:nth-child(2) {
+            grid-area: b;
+        }
+        
+        #second>div:nth-child(3) {
+            grid-area: c;
+            margin-top: -120px;
+        }
+        
+        #second>div:nth-child(4) {
+            grid-area: d;
+            margin-top: -130px;
+        }
+        
+        .img {
+            width: 95%;
+            height: 30%;
+        }
+        
+        #second>div>h2 {
+            font-family: "Book Antiqua";
+            font-size: 20px;
+            font-weight: 2px;
+        }
+        
+        #second>div>h2+p {
+            color: #5e5e69;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            margin-top: -5px;
+        }
+        
+        #second>div>p+p {
+            font-size: 13px;
+            color: #e66e73;
+        }
+        
+        #container>div>p+p {
+            color: #e66e73;
+        }
+        
+        #container>div>h1+p {
+            font-size: 20px;
+            color: #5e5e69;
+        }
+        
+        #heading {
+            margin-bottom: 20px;
+            font-family: Bodoni MT;
+            margin-left: 20px;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+        
+        #main {
+            width: 100%;
+            height: 630px;
+            border: 0px;
+            margin: auto;
+            margin-top: -630px;
+            background-color: #f2f5f7;
+            margin-bottom: 50px;
+        }
+        
+        #end {
+            margin: auto;
+            text-align: center;
+        }
+        
+        h2:hover {
+            color: #e00d24;
+        }
+        
+        h1:hover {
+            color: #e00d24;
+        }
+        
+        #container>img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="ads"><img src="https://secure-ds.serving-sys.com/resources/PROD/asset/1073745701/IMAGE/20220610/outlook_GBD-200_1280x250_71496722076948205.jpg">
+    </div>
+    <div id="tags">
+        <div>
+            <p> Friday, Jun 17, 2022
+            </p>
+        </div>
+        <div id="logo">
+            <a href="https://www.facebook.com/Outlookindia"><img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/"><img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a>
+            <a href="https://www.instagram.com/outlookindia/"><img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine"><img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+    <div id="outlook">
+        <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="outlook">
+        <p>LOGIN <span>|</span> SUBSCRIBE
+        </p>
+    </div>
+    <div id="container1">
+        <div id="navbar">
+            <ul>
+                <li type="none"><a href="home">HOME</a></li>
+                <li type="none"><a href="outlook">OUTLOOK</a>
+                    <ul id="x">
+                        <li><a href="">Magazine</a></li>
+                        <li><a href="">India News</a></li>
+                        <li><a href="">International News</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Study Abroad</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="businees">BUSINESS</a>
+
+                    <ul>
+                        <li><a href="">Magazine</a></li>
+                        <li><a href="">Headlines</a></li>
+                        <li><a href="">Big Story</a></li>
+                        <li><a href="">Enterprise</a></li>
+                        <li><a href="">Strategy</a></li>
+                        <li><a href="">Startups</a></li>
+                        <li><a href="">Prespective</a></li>
+                        <li><a href="">Pixstory</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Women</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="money">MONEY</a></li>
+                <li type="none"><a href="crypto corner">CRYPTO CORNER</a></li>
+                <li type="none"><a href="travel">TRAVEL</a>
+
+                    <ul id="innerMenu3">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">See</a></li>
+                        <li><a href="">Experience</a></li>
+                        <li><a href="">Travel</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Responsible</a></li>
+                        <li><a href="">Tourism</a></li>
+                        <li><a href="">OT</a></li>
+                        <li><a href="">Quiz</a></li>
+                        <li><a href="">Guide</a></li>
+                        <li><a href="">Books</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="sports">SPORTS</a></li>
+                <li type="none"><a href="videos">VIDEOS</a></li>
+                <!-- <li type="none"><a href="entertainment">ENTERTAINMENT</a></li>  -->
+                <li type="none"><a href="photos">PHOTOS</a></li>
+
+                <li type="none"><a href="mazagine">MAZAGINE</a>
+                    <ul id="innerMenu4">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Latest</a></li>
+                        <li><a href="">Issue</a></li>
+                        <li><a href="">India</a></li>
+                        <li><a href="">World</a></li>
+                        <li><a href="">Bussiness</a></li>
+                        <li><a href="">Boks</a></li>
+                        <li><a href="">sports</a></li>
+                        <li><a href="">The News</a></li>
+                        <li><a href="">Opinion</a></li>
+                        <li><a href="">Art & Entertainment</a></li>
+                        <li><a href="">Archives</a></li>
+
+                    </ul>
+                </li>
+                <li type="none"><a href="hindi">HINDI</a></li>
+                <li type="none"><a href="poshan">POSHAN</a></li>
+
+                <li type="none"><a href="otrhers">OTHERS</a>
+                    <ul id="innerMenu5">
+                        <li><a href="">Poshan</a></li>
+                        <li><a href="">Planet</a></li>
+                        <li><a href="">Outlook</a></li>
+                        <li><a href="">Sportlight</a></li>
+                        <li><a href="">Krishi</a></li>
+                    </ul>
+                </li>
+                <li><input id="search" type="search"><img id="img_search" src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <hr id="line">
+    <h3 id="heading">Culture & Society</h3>
+
+    <div id="container">
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1650547337.webp" alt="error">
+            <h1>
+                A Konkan Dirge: The Slow Death Of Goa's Official Language</h1>
+            <p>In an increasingly cosmopolitan Goa, Konkani’s slow and steady march to irrelevance appears to have begun. Apart from socio-cultural change, large scale migration – both into and out of Goa, there are some inherent fundamental flaws, which
+                may have...</p>
+            <p>12 June 2022</p>
+
+        </div>
+        <hr>
+        <div id="second">
+            <div>
+                <img class="img" src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1651472977.webp" alt="error">
+                <h2>Goa Is A Tourist Hotspot But At What Cost? Notes From A Hotelier's Diary</h2>
+                <p>Largescale development and concretisation has led to the indispensable asset being over-exploited and has left the low-lying coastal areas at significant risk...</p>
+                <p>12 June 2022</p>
+            </div>
+
+            <div>
+                <img class="img" src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/Coal._1650531127.webp" alt="error">
+                <h2>Spirited Tales | 'We Went To Goa And Made A Gin': Story Of India's First Craft Gin</h2>
+                <p>If you want to make a gin, go to Goa! How and why this statement has come to be accepted as reality is still a mystery which we will try to get to the bottom...</p>
+                <p>12 June 2022</p>
+            </div>
+
+            <div>
+                <h2>In Pictures: Pride Month In India And The World</h2>
+                <p>Parades and other events are being organised across the world as June is celebrated as the Pride Month, dedicated to the LGBTQ community. The month is marked...</p>
+            </div>
+
+            <div>
+
+                <h2>Regional Literature Needs Quality Translators: Assam Poet Rita Chowdhury</h2>
+
+                <p>The Assamese poet and novelist, who served as the Director of the National Book Trust, reflects on the state of translations from Assamese literature and the...
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="main"></div>
+    <div id="end">
+        <p>ADVERTISEMENT</p>
+        <img src="https://tpc.googlesyndication.com/simgad/12297990069957152181" alt="error">
+    </div>
+</body>
+
+</html>

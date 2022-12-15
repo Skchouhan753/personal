@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    /* ////////nav///////////// */
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #navbar>ul a:hover {
+        /* background-color: rgb(230, 228, 228); */
+        /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  */
+        border: 1px solid rgb(212, 209, 209);
+        color: rgb(192, 13, 13);
+    }
+    
+    #navbar {
+        margin: 0px;
+        padding: 0px;
+        margin: auto;
+    }
+    
+    #navbar>ul {
+        padding: 0px;
+        text-align: center;
+        margin: 0px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    
+    #navbar>ul>li {
+        float: left;
+        padding: 5px 7px;
+    }
+    
+    #navbar>ul>li a {
+        text-decoration: none;
+        padding: 0px;
+        margin: 0;
+        color: #515356;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    
+    #navbar>ul li:hover {
+        background-color: transparent;
+    }
+    
+    #navbar ul ul {
+        display: none;
+    }
+    
+    #navbar>ul>li>ul li {
+        float: center;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        /* font-weight: bold; */
+    }
+    
+    #navbar>ul>li:hover>ul {
+        display: block;
+        background: #ccc;
+        position: absolute;
+        margin-bottom: 0;
+        background-color: rgb(255, 255, 255);
+        left: 0;
+        width: 100%;
+        /* top:20px; */
+        font-size: 18px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    
+    #navbar>ul>li>ul li {
+        list-style: none;
+        margin-top: 20px;
+        float: left;
+    }
+    
+    #navbar>ul>li>input+img {
+        width: 10px;
+        height: 10px;
+    }
+    
+    #container {
+        margin-top: 30px;
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #outlook {
+        margin-top: -20px;
+    }
+    
+    #outlook>img {
+        height: 40px;
+        width: 15%;
+        /* border: 1px solid; */
+        margin-top: 20px;
+        margin: auto;
+        margin-left: 42%;
+    }
+    
+    #outlook>img+p {
+        margin: auto;
+        text-align: center;
+        color: #515356;
+        font-size: 13px;
+        margin-top: 5px;
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 10px;
+    }
+    
+    #outlook>img+p>span {
+        color: #e00d24;
+        font-weight: bolder;
+    }
+    
+    #tags {
+        display: flex;
+        justify-content: space-between;
+        width: 88%;
+        margin: auto;
+        /* margin-top: 20px; */
+    }
+    
+    #logo {
+        display: flex;
+        width: 10%;
+        justify-content: space-evenly;
+    }
+    
+    #tags>div>p {
+        font-size: 13px;
+        color: #515356;
+    }
+    
+    #search {
+        border: 0px;
+        width: 30%;
+    }
+    
+    #line {
+        background-color: #e00d24;
+        color: #e00d24;
+    }
+    /* *************************** */
+    /* ////////////nav end/////////////// */
+    
+    #main-box {
+        /* border: 1px solid red; */
+        height: 100%;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 70px;
+    }
+    
+    #header-box {
+        /* border: 1px solid rgb(12, 11, 11); */
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-content: space-evenly;
+        grid-row-gap: 50px;
+        grid-column-gap: 100px;
+    }
+    /* #header-box>div {
+        border: 1px solid chocolate;
+        /* display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px
+     */
+    
+    #image {
+        /* height: 650px; */
+        width: 100%;
+    }
+</style>
+
+<body>
+    <!-- /////////////////nav////////////// -->
+    <div id="tags">
+        <div>
+            <p> Friday, Jun 17, 2022
+            </p>
+        </div>
+        <div id="logo">
+            <a href="https://www.facebook.com/Outlookindia"><img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/"><img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a>
+            <a href="https://www.instagram.com/outlookindia/"><img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine"><img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+    <div id="outlook">
+        <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="outlook">
+        <p>LOGIN <span>|</span> SUBSCRIBE
+        </p>
+    </div>
+    <div id="container">
+        <div id="navbar">
+            <ul>
+                <li type="none"><a href="home">HOME</a></li>
+                <li type="none"><a href="outlook">OUTLOOK</a>
+                    <ul id="x">
+                        <li><a href="">Magazine</a></li>
+                        <li><a href="">India News</a></li>
+                        <li><a href="">International News</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Study Abroad</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="businees">BUSINESS</a>
+
+                    <ul>
+                        <li><a href="">Magazine</a></li>
+                        <li><a href="">Headlines</a></li>
+                        <li><a href="">Big Story</a></li>
+                        <li><a href="">Enterprise</a></li>
+                        <li><a href="">Strategy</a></li>
+                        <li><a href="">Startups</a></li>
+                        <li><a href="">Prespective</a></li>
+                        <li><a href="">Pixstory</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Women</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="money">MONEY</a></li>
+                <li type="none"><a href="crypto corner">CRYPTO CORNER</a></li>
+                <li type="none"><a href="travel">TRAVEL</a>
+
+                    <ul id="innerMenu3">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">See</a></li>
+                        <li><a href="">Experience</a></li>
+                        <li><a href="">Travel</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Responsible</a></li>
+                        <li><a href="">Tourism</a></li>
+                        <li><a href="">OT</a></li>
+                        <li><a href="">Quiz</a></li>
+                        <li><a href="">Guide</a></li>
+                        <li><a href="">Books</a></li>
+                    </ul>
+
+                </li>
+                <li type="none"><a href="sports">SPORTS</a></li>
+                <li type="none"><a href="videos">VIDEOS</a></li>
+                <!-- <li type="none"><a href="entertainment">ENTERTAINMENT</a></li>  -->
+                <li type="none"><a href="photos">PHOTOS</a></li>
+
+                <li type="none"><a href="mazagine">MAZAGINE</a>
+                    <ul id="innerMenu4">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Latest</a></li>
+                        <li><a href="">Issue</a></li>
+                        <li><a href="">India</a></li>
+                        <li><a href="">World</a></li>
+                        <li><a href="">Bussiness</a></li>
+                        <li><a href="">Boks</a></li>
+                        <li><a href="">sports</a></li>
+                        <li><a href="">The News</a></li>
+                        <li><a href="">Opinion</a></li>
+                        <li><a href="">Art & Entertainment</a></li>
+                        <li><a href="">Archives</a></li>
+
+                    </ul>
+                </li>
+                <li type="none"><a href="hindi">HINDI</a></li>
+                <li type="none"><a href="poshan">POSHAN</a></li>
+
+                <li type="none"><a href="otrhers">OTHERS</a>
+                    <ul id="innerMenu5">
+                        <li><a href="">Poshan</a></li>
+                        <li><a href="">Planet</a></li>
+                        <li><a href="">Outlook</a></li>
+                        <li><a href="">Sportlight</a></li>
+                        <li><a href="">Krishi</a></li>
+                    </ul>
+                </li>
+                <li><input id="search" type="search"><img id="img_search" src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <hr id="line">
+    <!-- ///////////nav end////////// -->
+
+
+
+    <div id="main-box">
+        <div id="header-box">
+
+            <div> <img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220601144424.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220528163100.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220528111901.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220601144529.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220601134928.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20211231074143.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20211129205924.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20211030190729.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210930195009.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210901155831.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210804184652.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210706114314.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210604153152.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210508132812.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220601144717.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210219002206.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://s3.ap-south-1.amazonaws.com/olb-data/outlook_20220601144806.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+            <div><img id="image" src="https://imgnew.outlookindia.com/olbimg/outlook-media/outlook_20210301210328.jpeg" alt="">
+                <h2>JUNE 01,2022</h2>
+                <p>June 01,2022</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

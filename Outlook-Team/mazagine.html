@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #ads {
+
+            width: 1200px;
+            height: 230px;
+            border: 1px solid black;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        #ads img {
+            width: 1200px;
+            height: 230px;
+            border: 1px solid black;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        /* h1{
+        color:red;
+        font-size:60px;
+        font-weight:bold;
+        text-align:center;
+        margin-bottom:0px;
+        margin-top:0px;
+        font-family:Arial black;
+    } */
+        h1+p {
+            text-align: center;
+            margin-top: 0px;
+            font-size: 15px;
+        }
+
+
+        /**************************************************************/
+        #navbar>ul li:hover {
+            /* background-color: rgb(230, 228, 228); */
+            /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  */
+            border: 1px solid rgb(212, 209, 209);
+            color: rgb(192, 13, 13);
+        }
+
+        #navbar {
+            margin: 0px;
+            padding: 0px;
+            margin: auto;
+        }
+
+        #container {
+            margin-top: 30px;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #line {
+            background-color: #e00d24;
+            color: #e00d24;
+        }
+
+        #navbar>ul {
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            position: absolute;
+            margin-left: 90px;
+            list-style-type: none;
+        }
+
+        #navbar>ul>li {
+            float: left;
+            padding: 5px 7px;
+        }
+
+        #navbar>ul>li a {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0;
+            color: #515356;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+
+        #navbar>ul li:hover {
+            background-color: transparent;
+        }
+
+        #navbar ul ul {
+            display: none;
+        }
+
+        #outlook {
+            margin-top: -20px;
+        }
+
+        #outlook>img {
+            height: 40px;
+            width: 15%;
+            /* border: 1px solid; */
+            margin-top: 20px;
+            margin: auto;
+            margin-left: 42%;
+        }
+
+        #outlook>img+p {
+            margin: auto;
+            text-align: center;
+            color: #515356;
+            font-size: 13px;
+            margin-top: 5px;
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 10px;
+        }
+
+        #outlook>img+p>span {
+            color: #e00d24;
+            font-weight: bolder;
+        }
+
+        #tags {
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            margin: auto;
+            /* margin-top: 20px; */
+        }
+
+        #tags>div>p {
+            font-size: 13px;
+            color: #515356;
+        }
+
+        #outlook>img+p>a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        #logo {
+            display: flex;
+            width: 10%;
+            justify-content: space-evenly;
+        }
+
+        #navbar>ul>li>ul li {
+            float: center;
+            padding: 10px;
+            margin: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            /* font-weight: bold; */
+        }
+
+        #navbar>ul>li:hover>ul {
+            display: block;
+            background: #ccc;
+            position: absolute;
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            width: 100%;
+            /* top:20px; */
+            font-size: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        #navbar>ul>li>ul li {
+            list-style: none;
+            margin-top: 20px;
+            float: left;
+        }
+
+        #navbar>ul>li>input+img {
+            width: 10px;
+            height: 10px;
+        }
+
+        /* *************************** */
+        #body {
+            width: 100%;
+            height: 750px;
+            /* margin:auto; */
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: repeat(2, 200px);
+            /* row-gap: 80px;
+        column-gap: 20px; */
+            gap: 20px;
+            grid-template-areas:
+                "a b b c"
+                "d d d d";
+        }
+
+        #body>div:nth-child(1) {
+            grid-area: a;
+            /* border: 1px solid red; */
+            width: 300px;
+            height: 400px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        #body>div:nth-child(2) {
+            grid-area: b;
+            margin-left: 70px;
+            margin-top: 20px;
+            height: 600px;
+            width: 600px;
+
+        }
+
+        #body>div:nth-child(3) {
+            grid-area: c;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: grid;
+            justify-content: center;
+            width: 300px;
+            height: 740px;
+            margin-left: 210px;
+            /* border: 1px solid red; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        #body>div:nth-child(4) {
+            grid-area: d;
+            /* border: 1px solid red; */
+            width: 300px;
+            height: 380px;
+            margin-left: 20px;
+            margin-top: 150px;
+        }
+
+        #body>div:nth-child(4) a:hover {
+            color: red;
+        }
+
+        #body>div:nth-child(2) a {
+            text-align: center;
+            font-size: 23px;
+            font-weight: bold;
+            font-family: Times New Roman;
+        }
+
+        #body>div:nth-child(3) h3 {
+            text-align: center;
+            margin-top: -100px;
+        }
+
+        #body>div:nth-child(3) h2 {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 90px;
+            font-size: 20px;
+        }
+
+        #body>div img {
+            width: 300px;
+            height: 200px;
+        }
+
+        #body>div:nth-child(2) img {
+            width: 650px;
+            padding: 5px;
+            height: 390px;
+            border: 1px solid rgb(11, 11, 11);
+        }
+
+        #body>div:nth-child(3) img {
+            border: 1px solid black;
+            margin: auto;
+            width: 300px;
+            height: 400px;
+        }
+
+        #body>div:nth-child(3) button {
+            background-color: red;
+            margin: auto;
+            border: none;
+            /* color:white;  */
+            margin-top: -5px;
+            margin-bottom: 0px;
+            ;
+            width: 140px;
+            height: 30px;
+        }
+
+        #body>div:nth-child(3) button>a {
+            color: white;
+            font-size: 11px;
+        }
+
+        #body>div:nth-child(3) hr+h3 {
+            margin-top: 0px;
+        }
+
+        /* see here */
+        #body>div:nth-child(3) hr {
+            height: 0px;
+            /* transform: rotate(50deg); */
+            /* margin-top:-150px; */
+            /* margin-bottom: -10px;  */
+            /* height:320px; */
+            border-color: rgb(231, 227, 227);
+            /* width:100%; */
+        }
+
+        #body>div:nth-child(1) h3 {
+            color: red;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #body>div:nth-child(4) h3 {
+            color: red;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #body>div:nth-child(1) h3+p {
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #body>div:nth-child(4) h3+p {
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #body>div:nth-child(2) h3 {
+            color: rgb(8, 8, 8);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #body>div:nth-child(2) h3+h3 {
+            color: red;
+            margin-top: 10px;
+        }
+
+        #body select {
+            width: 300px;
+            height: 45px;
+            margin: auto;
+            margin-top: -10px;
+        }
+
+        #body a:hover {
+            color: red;
+        }
+
+        #body>div a {
+            text-decoration: none;
+            font-family: Arial Black;
+            color: rgb(13, 13, 13);
+            font-size: 15px;
+            padding: 5px;
+            display: block;
+        }
+
+        /* ****************************************** */
+        #bottom {
+            width: 100%;
+            height: 450px;
+            /* margin:auto; */
+            margin-top: 10px;
+            display: grid;
+            justify-content: center;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(4, 360px);
+            grid-template-rows: repeat(1, 400px);
+            /* row-gap: 80px;
+        column-gap: 20px; */
+            gap: 20px;
+            grid-template-areas:
+                "a b c d";
+        }
+
+        #bottom div {
+            margin-top: 20px;
+        }
+
+        #bottom>div:nth-child(1) {
+            color: rgb(8, 8, 8);
+            text-align: center;
+            grid-area: a;
+            margin-left: 90px;
+            width: 280px;
+            height: 170px;
+            /* border:1px solid red; */
+        }
+
+        #bottom>div:nth-child(2) {
+            color: rgb(8, 8, 8);
+            text-align: center;
+            grid-area: b;
+            width: 280px;
+            height: 170px;
+            margin-left: 50px;
+
+            /* border:1px solid red; */
+        }
+
+        #bottom>div:nth-child(3) {
+            color: rgb(8, 8, 8);
+            text-align: center;
+            grid-area: c;
+            width: 280px;
+            height: 170px;
+            margin-left: 40px;
+            /* border:1px solid red; */
+        }
+
+        #bottom>div:nth-child(4) {
+            color: rgb(8, 8, 8);
+            text-align: center;
+            grid-area: d;
+            width: 280px;
+            height: 170px;
+            margin-right: 30px;
+            /* border:1px solid red; */
+        }
+
+        #bottom img {
+            width: 280px;
+            height: 170px;
+        }
+
+        #bottom>div a {
+            font-family: Arial Black;
+            color: rgb(13, 13, 13);
+            font-size: 15px;
+            text-decoration: none;
+            text-align: left;
+            display: block;
+            margin-left: 20px;
+
+        }
+
+        #bottom>div a:hover {
+            color: red;
+        }
+
+        #bottom>div h4 {
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+
+        #bottom>div h3 {
+            text-align: left;
+            margin-left: 20px;
+            color: red;
+            margin-top: 10px;
+        }
+
+        #bottom>div h3+p {
+            text-align: left;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ads"><img
+            src="https://secure-ds.serving-sys.com/resources/PROD/asset/1073745701/IMAGE/20220610/outlook_GBD-200_1280x250_71496722076948205.jpg">
+    </div>
+    <div id="tags">
+        <div>
+            <p> Friday, Jun 17, 2022
+            </p>
+        </div>
+        <div id="logo">
+            <a href="https://www.facebook.com/Outlookindia"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt=""></a>
+            <a href="https://twitter.com/outlookindia/"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="error"></a>
+            <a href="https://www.instagram.com/outlookindia/"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/OutlookMagazine"><img
+                    src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt=""></a>
+        </div>
+    </div>
+    <div id="outlook">
+        <img src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="outlook">
+        <p><a href="login.html">LOGIN</a> <span>|</span>
+            <a href="signup.html">SUBSCRIBE</a>
+        </p>
+    </div>
+
+    <nav id="navbar">
+        <ul>
+            <li type="none"><a href="index.html">HOME</a></li>
+            <li type="none"><a>OUTLOOK</a>
+                <ul>
+                    <li><a href="mazagine.html">Magazine</a></li>
+                    <li><a href="indiaNews.html">India News</a></li>
+                    <li><a href="international.html">International News</a></li>
+                    <li><a href="Culture.html">Culture</a></li>
+                    <li><a href="studyAbroad.html">Study Abroad</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a>BUSINESS</a>
+
+                <ul>
+                    <li><a href="S-Magazine.html">Magazine</a></li>
+                    <li><a href="S-Headline.html">Headlines</a></li>
+                    <li><a href="R-BigStory.html">Big Story</a></li>
+                    <li><a href="R-Enterprise.html">Enterprise</a></li>
+                    <li><a href="R-Strategy.html">Strategy</a></li>
+                    <li><a href="R-Startups.html">Startups</a></li>
+                    <li><a href="R-Perspective1.html">Prespective</a></li>
+                    <li><a href="S-PixStory.html">Pixstory</a></li>
+                    <li><a href="S-Videos.html">Videos</a></li>
+                    <li><a href="S-Women.html">Women</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="OutlookMoney.html">MONEY</a></li>
+            <li type="none"><a href="crypto.html">CRYPTO CORNER</a></li>
+            <li type="none"><a>TRAVEL</a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">See</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="">Responsible</a></li>
+                    <li><a href="">Tourism</a></li>
+                    <li><a href="">OT</a></li>
+                    <li><a href="">Quiz</a></li>
+                    <li><a href="">Guide</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+
+            </li>
+            <li type="none"><a href="sports.html">SPORTS</a></li>
+            <li type="none"><a href="videos.html">VIDEOS</a></li>
+            <li type="none"><a href="art.html">ENTERTAINMENT</a></li>
+            <li type="none"><a href="photos.html">PHOTOS</a></li>
+
+            <li type="none"><a href="mazagine.html">MAZAGINE</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="latestIssue.html">Latest Issue</a></li>
+
+                    <li><a href="indiaNews.html">India</a></li>
+                    <li><a href="international.html">World</a></li>
+                    <li><a href="business.html">Bussiness</a></li>
+                    <li><a href="books.html">Books</a></li>
+
+                    <li><a href="sports.html">sports</a></li>
+                    <li><a href="international.html">The News</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="art.html">Art & Entertainment</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+
+                </ul>
+            </li>
+            <li type="none"><a href="hindi">HINDI</a></li>
+            <li type="none"><a href="poshan.html">POSHAN</a></li>
+
+            <li type="none"><a href="others">OTHERS</a>
+                <ul>
+                    <li><a href="poshan.html">Poshan</a></li>
+                    <li><a href="">Planet</a></li>
+                    <li><a href="">Outlook</a></li>
+                    <li><a href="">Sportlight</a></li>
+                    <li><a href="">Krishi</a></li>
+                </ul>
+            </li>
+            <li><input id="search" type="search"><img id="img_search"
+                    src="https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg"></input>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br>
+    <hr>
+    <div id="body">
+        <div><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654743535.webp"><a
+                href="https://www.outlookindia.com/national/syrena-s-elegy-goa-as-an-allegory-of-a-mermaid-magazine-201235">Syrena’s
+                Elegy: Goa As An Allegory Of A Mermaid</a>
+            <h3>MAYABHUSHAN NAGVENKAR /</h3>
+            <p>Last Updated at 2:49 pm</p>
+        </div>
+        <div><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654769344.webp"><a
+                href="https://www.outlookindia.com/national/tears-of-the-mermaid-the-melancholy-of-goa-magazine-201234">Tears
+                Of The Mermaid: The Melancholy Of Goa</a>
+            <h3>The story of Goa is in many ways our story. And we decided to tell its story from the point of view of
+                an old mermaid. We decided to make the mermaid speak to us.</h3>
+            <h3>CHINKI SINHA /</h3>
+        </div>
+        <div><img
+                src="https://imgnew.outlookindia.com/uploadimage/library/9_16/9_16_3/IMAGE_1654831067.webp?v=20220401_c">
+            <h2>20 June 2022</h2>
+
+            <h3>The idea of Goa—free-spirited, all-embracing, bountiful—is disintegrating rapidly. How did the state, a
+                jewel in India’s crown, lose its shine? The story of the coastal state, through ground reports and
+                opinion pieces.</h3><button><a
+                    href="https://subscriptions.outlookindia.com/default?utm_source=magazine">SUBSCRIBE NOW</a></button>
+            <hr>
+            <h3>ARCHIVES</h3>
+            <select>
+                <option value="">Select Year</option>
+                <option value="">2022</option>
+                <option value="">2021</option>
+                <option value="">2020</option>
+                <option value="">2019</option>
+                <option value="">2018</option>
+                <option value="">2017</option>
+                <option value="">2016</option>
+                <option value="">2015</option>
+                <option value="">2014</option>
+                <option value="">2013</option>
+                <option value="">2012</option>
+                <option value="">2011</option>
+                <option value="">2010</option>
+                <option value="">2009</option>
+                <option value="">2008</option>
+                <option value="">2007</option>
+                <option value="">2006</option>
+                <option value="">2005</option>
+                <option value="">2004</option>
+                <option value="">2003</option>
+                <option value="">2002</option>
+                <option value="">2001</option>
+                <option value="">2000</option>
+                <option value="">1999</option>
+                <option value="">1998</option>
+                <option value="">1997</option>
+                <option value="">1996</option>
+                <option value="">1995</option>
+            </select>
+        </div>
+        <div><img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654747277.webp"><a
+                href="https://www.outlookindia.com/national/temple-run-clash-of-history-and-faith-threatens-age-old-communal-harmony-in-goa-magazine-201243">Temple
+                Run: Clash Of History And Faith Threatens Age-old Communal Harmony In Goa</a>
+            <h3>MAYABHUSHAN NAGVENKAR /</h3>
+            <p>Last Updated at 2:56 pm</p>
+        </div>
+
+    </div>
+    <div id="bottom">
+
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654745420.webp" alt="">
+            <a
+                href="https://www.outlookindia.com/national/a-story-and-a-recipe-frozen-in-time-from-the-idylls-of-goa-s-khazans-magazine-201238">A
+                Story And A Recipe Frozen In Time, From The Idylls Of Goa's Khazans</a>
+            <h4>Friendship, romance and a pint of urrack. A bitter-sweet story from the banks of River Zuari.</h4>
+            <h3>SHARON FERNANDES /</h3>
+            <p>Last Updated at 2:53 pm</p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654747277.webp" alt="">
+            <a href="Temple Run: Clash Of History And Faith Threatens Age-old Communal Harmony In Goa">Temple Run: Clash
+                Of History And Faith Threatens Age-old Communal Harmony In Goa</a>
+            <h4>For generations now, absence of consistent and rigorous public discourse about Goa’s colonial history
+                had led to a tentatively harmonious...</h4>
+            <h3>MAYABHUSHAN NAGVENKAR /</h3>
+            <p>Last Updated at 2:56 pm</p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654747809.webp" alt="">
+            <a href="What Drives Sanatan Sanstha, The Controversial Hindu Right-wing Organisation?">What Drives Sanatan
+                Sanstha, The Controversial Hindu Right-wing Organisation?</a>
+            <h4>Founded in 1990 by Dr Jayant Balaji Atavale, a hypnotherapist, the Sanatan Sanstha is registered as a
+                charitable organisation. A few people linked to...</h4>
+            <h3>HAIMA DESHPANDE /</h3>
+            <p>Last Updated at 2:59 pm</p>
+        </div>
+        <div>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1654750300.webp" alt="">
+            <a
+                href="https://www.outlookindia.com/national/we-are-the-whipping-boys-now-sanatan-sanstha-national-spokesperson-chetan-rajhans-magazine-201112">We
+                Are The Whipping Boys Now: Sanatan Sanstha National Spokesperson Chetan Rajhans</a>
+            <h4>The Sanatan Sanstha has been in the dock over the controversial murders of rationalists and in the
+                spotlight for bomb attacks in Maharashtra and...</h4>
+            <h3>CHINKI SINHA /</h3>
+            <p>Last Updated at 3:01 pm</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
