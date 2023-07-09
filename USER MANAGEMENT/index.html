@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>CRUD PSC</h1>
+    <input type="text" id="name" placeholder="Name"><br><br>
+    <input type="text" id="batch" placeholder="Batch"><br><br>
+    <input type="text" id="course" placeholder="Course"><br><br>
+    <input type="number" id="age" placeholder="Age"><br><br>
+    <input type="number" id="mobile" placeholder="Mobile"><br><br>
+    <input type="number" id="score" placeholder="Evaluation_Score"><br><br>
+    <button onclick="addEmployee()">Add Employee</button><br><br>
+    <button onclick="previous()">Previous</button>
+    <button onclick="sortLtH()">Sort Low to High</button>
+    <button onclick="sortHtL()">Sort High to Low</button>
+    <button onclick="filterData()">Filter</button>
+    <button onclick="next()">Next</button>
+    <div id="container"></div>
+</body>
+</html>
+<script src="./index.js"></script>
