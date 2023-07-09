@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("https://media4.giphy.com/media/xT8qB50yhFINpFTymI/giphy.gif?cid=ecf05e47bqquczc50ru82i2z7xkvz3lyrz0c8fb7zwju0lw0&rid=giphy.gif&ct=g");
+    background-repeat: no-repeat;
+    background-size: 100% 631px;
+    text-align: center;
+}
+#query{
+    margin-top: 80px;
+    width:500px;
+    height:50px;
+    border-color: none;
+    
+    border-radius: 15px;
+    background-color:darkslategray;
+}

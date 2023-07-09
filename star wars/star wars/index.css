@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.container{
+    width: 100%;
+    
+    /* justify-content: center; */
+    /* border:1px solid red; */
+    /* align-items: center; */
+    margin: auto;
+    
+}
+body{
+    background-image: url("https://media4.giphy.com/media/xT8qB50yhFINpFTymI/giphy.gif?cid=ecf05e47bqquczc50ru82i2z7xkvz3lyrz0c8fb7zwju0lw0&rid=giphy.gif&ct=g");
+    background-repeat: no-repeat;
+    background-size: 100% 631px;
+    text-align: center;
+    color:white;
+}
+#query{
+    margin-top: 40px;
+    width:500px;
+    height:50px;
+    border-color: wheat;
+    color:white;
+    border-radius: 15px;
+    background-color:transparent;
+    font-size: 25px;
+}
+img{
+    width:350px;
+    height:170px;
+    margin-top: 10px;
+}
+#results div{
+    background-color: transparent;
+    width:200px;
+    border:1px solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
