@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-I</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Add Item</h1>
+        <input type="text" id="item_id" placeholder="Enter item Id"><br><br>
+        <input type="text" id="item_image" placeholder="image url"><br><br>
+        <input type="text" id="item_title" placeholder="Enter Title"><br><br>
+        <input type="text" id="item_desc" placeholder="Description"><br><br>
+        <input type="text" id="item_price" placeholder="Price"><br><br>
+        <input type="text" id="item_rating" placeholder="Ratings"><br><br>
+        <button onclick="addItem()">Submit</button>
+    </div>
+
+    <div>
+        <h1>Delete Item</h1>
+        <input type="text" id="delete_id" placeholder="Enter item id to delete">
+        <button onclick="deleteItem()">Delete</button>
+    </div>
+
+    <div>
+        <h1>Update Item</h1>
+        <input type="text" id="update_id" placeholder="Enter item Id"><br><br>
+        <input type="text" id="update_image" placeholder="Enter new image url"><br><br>
+        <input type="text" id="update_title" placeholder="Enter new Title"><br><br>
+        <input type="text" id="update_desc" placeholder="Enter new Description"><br><br>
+        <input type="text" id="update_price" placeholder="Enter new Price"><br><br>
+        <input type="text" id="update_rating" placeholder="Enter new Ratings"><br><br>
+        <button onclick="updateItem()">Update Item</button>
+    </div>
+
+    <div>
+        <h1>Replace Item</h1>
+        <input type="text" id="replace_id" placeholder="Enter id to replace data"/><br><br>
+        <input type="text" id="replace_image" placeholder="Enter new image url"><br><br>
+        <input type="text" id="replace_title" placeholder="Enter new Title"><br><br>
+        <input type="text" id="replace_desc" placeholder="Enter new Description"><br><br>
+        <input type="text" id="replace_price" placeholder="Enter new Price"><br><br>
+        <input type="text" id="replace_rating" placeholder="Enter new Ratings"><br><br>
+
+        <!-- <input type="text" id="id" placeholder="Enter id to replace data"/>
+        <input type="text" id="replace_title" placeholder="Enter new title"/> -->
+        <button onclick="replaceItem()">Replace Item</button>
+    </div>
+
+</body>
+</html>
+<script src="./admin.js"></script>
